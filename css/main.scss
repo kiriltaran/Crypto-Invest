@@ -1,0 +1,323 @@
+@import 'fonts.scss';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #ffffff;
+  background-color: #f8f8f8;
+}
+
+// ELEMENT HELPERS
+.btn {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: lowercase;
+  transition: .3s linear;
+}
+
+.main-btn {
+  position: relative;
+  z-index: 900;
+  display: block;
+  text-align: center;
+  margin: 42px auto;
+  width: 500px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 6px;
+  background-color: #2277ef;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: lowercase;
+  box-shadow: 0px 0px 25px -20px rgba(0, 0, 0, 0.5);
+  &:hover {
+    box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.5);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  margin: 42px auto 33px;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.underline {
+  display: inline-block;
+  &:after {
+    content: '';
+    display: block;
+    height: 3px;
+    background: linear-gradient(to right, #ff8080, #02ffd1);
+    border-radius: 100px;
+  }
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.grey {
+  color: #515151;
+}
+
+// PAGE
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 0 10px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  line-height: 70px;
+  background-color: #529af6;
+  &-logo {
+    height: 100%;
+    margin-right: 54px;
+    img {
+      width: 90%;
+      vertical-align: middle;
+    }
+  }
+  .nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    &-list {
+      margin-left: 65px;
+      display: flex;
+      justify-content: space-around;
+      flex-grow: 1;
+      &-item {
+        font-size: 18px;
+        font-weight: 300;
+        list-style: none;
+        text-transform: lowercase;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    &-right {
+      margin-right: 65px;
+      margin-left: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .tel {
+        font-size: 25px;
+        font-weight: 300;
+        margin-right: 10px;
+        &:before {
+          content: "";
+          display: inline-block;
+          background: url('../img/phone-icon.png');
+          width: 35px;
+          height: 35px;
+          vertical-align: sub;
+          margin-right: 10px;
+        }
+      }
+      .callback-btn {
+        background-color: #35c971;
+        font-size: 18px;
+        width: 230px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        border: none;
+        border-radius: 6px;
+        opacity: .9;
+        &:hover {
+          box-shadow: 0px 15px 25px -10px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}
+
+.screen {
+  background: url('../img/header-bg.png');
+  height: 600px; //temporary
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-text {
+    text-align: center;
+  }
+}
+
+.second {
+  position: relative;
+  .circle-bg {
+    top: -42px;
+    right: 0;
+    position: absolute;
+    width: 855px;
+    height: 135px;
+    background: url('../img/circle-header-bg.png');
+    background-position: bottom;
+  }
+  .crypto {
+    position: relative;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &-bg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to left, #47aff9, rgba(156, 185, 255, 0.6));
+      opacity: .1;
+    }
+    &-item {
+      filter: grayscale(1);
+      transition: .2s linear;
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+.education {
+  text-align: center;
+  &-list {
+    margin: 0 240px;
+    display: flex;
+    .bar {
+      flex-grow: 1;
+    }
+    &-item {
+      text-align: left;
+      padding: 25px 26px 29px;
+      font-size: 24px;
+      font-weight: 300;
+      margin: 25px;
+      transition: .3s linear;
+      &:hover {
+        box-shadow: 0px 20px 50px -20px rgba(0, 0, 0, 0.5);
+        background: #fff;
+      }
+      .order {
+        font-family: 'Raleway', sans-serif;
+        font-size: 48px;
+        font-weight: 900;
+        margin-right: 22px;
+      }
+    }
+  }
+}
+
+.learning {
+  position: relative;
+  .particles-bg {
+    bottom: 0;
+    position: absolute;
+    height: 35%;
+    width: 100%;
+  }
+  text-align: center;
+  height: 800px;
+  background: linear-gradient(to bottom,
+  #47aff9,
+  #004cb7);
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 345px;
+    &-item {
+      width: 221px;
+      text-align: left;
+      font-size: 24px;
+      font-weight: 300;
+      .item-image {
+        height: 225px;
+        line-height: 225px;
+        font-size: 0;
+        text-align: center;
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.key {
+  text-align: center;
+}
+
+.knowledge {
+  text-align: center;
+  background: url('../img/knowledge-bg.png');
+  height: 880px;
+}
+
+.videos {
+  text-align: center;
+}
+
+.who {
+  text-align: center;
+  background: linear-gradient(to bottom, #76b3e8, #2a6dc7);
+  height: 700px;
+  .info {
+    text-align: left;
+    .leftbar {
+      display: inline-block;
+      .photo {
+        margin-left: 325px;
+      }
+    }
+    .rightbar {
+      display: inline-block;
+      margin-left: 150px;
+      vertical-align: top;
+      .descr {
+        font-family: 'Raleway', sans-serif;
+        font-size: 34px;
+        font-weight: 300;
+      }
+      .socials {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        &-item {
+          margin-right: 20px;
+        }
+      }
+      .achievements {
+        width: 780px;
+        border-radius: 6px;
+        background-color: #2277ef;
+        padding: 73px 130px 73px 50px;
+        &-list {
+          list-style: none;
+          font-size: 36px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
