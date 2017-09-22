@@ -122,24 +122,29 @@
           </div>
           <div class="achievements">
             <ul class="achievements-list">
-              <li class="achievements-item">Опыт торговли на бирже с 2006 года</li>
-              <li class="achievements-item">Имеет опыт торговли в Нью-Йорке на Уолл-Стрит</li>
-              <li class="achievements-item">Опыт преподавания с 2011 года</li>
+              <li class="achievements-list-item first">Опыт торговли на бирже с 2006 года</li>
+              <li class="achievements-list-item second">Имеет опыт торговли в Нью-Йорке на Уолл-Стрит</li>
+              <li class="achievements-list-item third">Опыт преподавания с 2011 года</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="comments">
-      <a class="main-btn btn"></a>
-      <h3 class="title">Отзывы</h3>
+    <section class="comments grey">
+      <a href="#" class="main-btn btn">Получить курс бесплатно</a>
+      <h3 class="title underline"><span class="bold">Отзывы</span></h3>
       <div class="carousel"></div>
     </section>
     <section class="join">
-      <span class="title">Ученики онлайн-академии CryptInvest уже зарабатывают на криптовалюте с помощью полученных знаний
-            Присоединяйтесь!</span>
-      <span class="subtitle">Присоединяйтесь! Получите бесплатный курс и узнайте 
-            все об успешном инвестировании</span>
+      <div id="particles-js-bot" class="particles-bg"></div>
+      <div class="join-text">
+        <span class="title">Ученики онлайн-академии <span class="bold">Crypt<span class="orange">Invest</span></span><br>уже
+        зарабатывают на криптовалюте с
+        <br>помощью полученных знаний<br>Присоединяйтесь!
+        </span>
+        <span class="subtitle">Присоединяйтесь! Получите бесплатный курс и узнайте 
+              все об успешном инвестировании</span>
+      </div>
     </section>
     <section class="form-section">
       <div class="form-panel">
@@ -159,12 +164,13 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-
-  </footer>
+  <footer class="footer"></footer>
   <script src="js/particles.min.js"></script>
   <script>
     particlesJS.load('particles-js', 'js/particles.json', function () {
+      console.log('callback - particles.js config loaded');
+    });
+    particlesJS.load('particles-js-bot', 'js/particles.json', function () {
       console.log('callback - particles.js config loaded');
     });
   </script>

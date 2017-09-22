@@ -48,7 +48,8 @@ a {
   font-family: 'Raleway', sans-serif;
   font-size: 48px;
   font-weight: 300;
-  margin: 42px auto 33px;
+  margin-top: 42px;
+  margin-bottom: 42px;
 }
 
 .bold {
@@ -232,17 +233,15 @@ a {
 
 .learning {
   position: relative;
+  text-align: center;
+  height: 800px;
+  background: linear-gradient(to bottom, #47aff9, #004cb7);
   .particles-bg {
     bottom: 0;
     position: absolute;
     height: 35%;
     width: 100%;
   }
-  text-align: center;
-  height: 800px;
-  background: linear-gradient(to bottom,
-  #47aff9,
-  #004cb7);
   &-list {
     display: flex;
     justify-content: space-around;
@@ -314,10 +313,47 @@ a {
         padding: 73px 130px 73px 50px;
         &-list {
           list-style: none;
+          list-style-position: inside;
           font-size: 36px;
           font-weight: 300;
+          &-item::before {
+            content: '';
+            display: inline-block;
+            width: 40px;
+            height: 34px;
+            margin-right: 35px;
+          }
+          .first::before {
+            background: url('../img/achievements-1.png');
+          }
+          .second::before {
+            background: url('../img/achievements-2.png');
+          }
+          .third::before {
+            background: url('../img/achievements-3.png');
+          }
         }
       }
     }
+  }
+}
+
+.comments {
+  text-align: center;
+}
+
+.join {
+  position: relative;
+  text-align: center;
+  height: 428px;
+  background-image: linear-gradient(to bottom, #2b6ec7, #73b1e6);
+  .particles-bg {
+    bottom: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .orange {
+    color: #eb873e;
   }
 }
