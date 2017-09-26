@@ -1,0 +1,1634 @@
+
+[{
+    "id": 1,
+    "dataCode": "+93",
+    "name": {
+        "en": "Afghanistan",
+        "ru": "Афганистан"
+    }
+}, {
+    "id": 3,
+    "dataCode": "+355",
+    "name": {
+        "en": "Albania",
+        "ru": "Албания"
+    }
+}, {
+    "id": 4,
+    "dataCode": "+213",
+    "name": {
+        "en": "Liberia",
+        "ru": "Либерия"
+    }
+}, {
+    "id": 5,
+    "dataCode": "+1",
+    "name": {
+        "en": "USA",
+        "ru": "США"
+    }
+}, {
+    "id": 6,
+    "dataCode": "+376",
+    "name": {
+        "en": "Andorra",
+        "ru": "Андорра"
+    }
+}, {
+    "id": 7,
+    "dataCode": "+244",
+    "name": {
+        "en": "Angola",
+        "ru": "Ангола"
+    }
+}, {
+    "id": 8,
+    "dataCode": "+1",
+    "name": {
+        "en": "Anguilla",
+        "ru": "Ангилья"
+    }
+}, {
+    "id": 10,
+    "dataCode": "+1",
+    "name": {
+        "en": "Antigua and Barbuda",
+        "ru": "Антигуа и Барбуда"
+    }
+}, {
+    "id": 11,
+    "dataCode": "+54",
+    "name": {
+        "en": "Argentina",
+        "ru": "Аргентина"
+    }
+}, {
+    "id": 12,
+    "dataCode": "+374",
+    "name": {
+        "en": "Armenia",
+        "ru": "Армения"
+    }
+}, {
+    "id": 13,
+    "dataCode": "+297",
+    "name": {
+        "en": "Aruba",
+        "ru": "Аруба"
+    }
+}, {
+    "id": 14,
+    "dataCode": "+61",
+    "name": {
+        "en": "Australia",
+        "ru": "Австралия"
+    }
+}, {
+    "id": 15,
+    "dataCode": "+43",
+    "name": {
+        "en": "Austria",
+        "ru": "Австрия"
+    }
+}, {
+    "id": 16,
+    "dataCode": "+994",
+    "name": {
+        "en": "Azerbaijan",
+        "ru": "Азербайджан"
+    }
+}, {
+    "id": 17,
+    "dataCode": "+1",
+    "name": {
+        "en": "Bahamas",
+        "ru": "Багамские Острова"
+    }
+}, {
+    "id": 18,
+    "dataCode": "+973",
+    "name": {
+        "en": "Bahrain",
+        "ru": "Бахрейн"
+    }
+}, {
+    "id": 19,
+    "dataCode": "+880",
+    "name": {
+        "en": "Bangladesh",
+        "ru": "Бангладеш"
+    }
+}, {
+    "id": 20,
+    "dataCode": "+1",
+    "name": {
+        "en": "Barbados",
+        "ru": "Барбадос"
+    }
+}, {
+    "id": 21,
+    "dataCode": "+375",
+    "name": {
+        "en": "Belarus",
+        "ru": "Беларусь"
+    }
+}, {
+    "id": 22,
+    "dataCode": "+32",
+    "name": {
+        "en": "Belgium",
+        "ru": "Бельгия"
+    }
+}, {
+    "id": 23,
+    "dataCode": "+501",
+    "name": {
+        "en": "Belize",
+        "ru": "Белиз"
+    }
+}, {
+    "id": 24,
+    "dataCode": "+229",
+    "name": {
+        "en": "Benin",
+        "ru": "Бенин"
+    }
+}, {
+    "id": 25,
+    "dataCode": "+1",
+    "name": {
+        "en": "Bermuda",
+        "ru": "Бермудские острова"
+    }
+}, {
+    "id": 26,
+    "dataCode": "+975",
+    "name": {
+        "en": "Bhutan",
+        "ru": "Бутан"
+    }
+}, {
+    "id": 27,
+    "dataCode": "+591",
+    "name": {
+        "en": "Bolivia",
+        "ru": "Боливия, Многонациональное Государство"
+    }
+}, {
+    "id": 29,
+    "dataCode": "+387",
+    "name": {
+        "en": "Bosnia and Herzegovina",
+        "ru": "Босния и Герцеговина"
+    }
+}, {
+    "id": 30,
+    "dataCode": "+267",
+    "name": {
+        "en": "Botswana",
+        "ru": "Ботсвана"
+    }
+}, {
+    "id": 32,
+    "dataCode": "+55",
+    "name": {
+        "en": "Brazil",
+        "ru": "Бразилия"
+    }
+}, {
+    "id": 34,
+    "dataCode": "+673",
+    "name": {
+        "en": "Brunei Darussalam",
+        "ru": "Бруней-Даруссалам"
+    }
+}, {
+    "id": 35,
+    "dataCode": "+359",
+    "name": {
+        "en": "Bulgaria",
+        "ru": "Болгария"
+    }
+}, {
+    "id": 36,
+    "dataCode": "+226",
+    "name": {
+        "en": "Burkina Faso",
+        "ru": "Буркина-Фасо"
+    }
+}, {
+    "id": 37,
+    "dataCode": "+257",
+    "name": {
+        "en": "Burundi",
+        "ru": "Бурунди"
+    }
+}, {
+    "id": 38,
+    "dataCode": "+855",
+    "name": {
+        "en": "Cambodia",
+        "ru": "Камбоджа"
+    }
+}, {
+    "id": 39,
+    "dataCode": "+237",
+    "name": {
+        "en": "Cameroon",
+        "ru": "Камерун"
+    }
+}, {
+    "id": 40,
+    "dataCode": "+1",
+    "name": {
+        "en": "Canada",
+        "ru": "Канада"
+    }
+}, {
+    "id": 42,
+    "dataCode": "+1",
+    "name": {
+        "en": "Cayman Islands",
+        "ru": "Каймановы острова"
+    }
+}, {
+    "id": 43,
+    "dataCode": "+236",
+    "name": {
+        "en": "Central African Republic",
+        "ru": "Центрально-Африканская Республика"
+    }
+}, {
+    "id": 44,
+    "dataCode": "+235",
+    "name": {
+        "en": "Chad",
+        "ru": "Чад"
+    }
+}, {
+    "id": 45,
+    "dataCode": "+216",
+    "name": {
+        "en": "Chile",
+        "ru": "Чили"
+    }
+}, {
+    "id": 46,
+    "dataCode": "+86",
+    "name": {
+        "en": "China",
+        "ru": "Китай"
+    }
+}, {
+    "id": 47,
+    "dataCode": "+61",
+    "name": {
+        "en": "Christmas Island",
+        "ru": "Остров Рождества"
+    }
+}, {
+    "id": 48,
+    "dataCode": "+61",
+    "name": {
+        "en": "Cocos Islands",
+        "ru": "Кокосовые острова (Килинг)"
+    }
+}, {
+    "id": 49,
+    "dataCode": "+57",
+    "name": {
+        "en": "Colombia",
+        "ru": "Колумбия"
+    }
+}, {
+    "id": 50,
+    "dataCode": "+269",
+    "name": {
+        "en": "Comoros",
+        "ru": "Коморские острова"
+    }
+}, {
+    "id": 51,
+    "dataCode": "+242",
+    "name": {
+        "en": "Congo",
+        "ru": "Конго"
+    }
+}, {
+    "id": 52,
+    "dataCode": "+243",
+    "name": {
+        "en": "Democratic Republic of the Congo",
+        "ru": "Демократическая Республика Конго"
+    }
+}, {
+    "id": 53,
+    "dataCode": "+682",
+    "name": {
+        "en": "Cook Islands",
+        "ru": "Острова Кука"
+    }
+}, {
+    "id": 54,
+    "dataCode": "+506",
+    "name": {
+        "en": "Costa Rica",
+        "ru": "Коста-Рика"
+    }
+}, {
+    "id": 55,
+    "dataCode": "+225",
+    "name": {
+        "en": "Côte D'ivoire",
+        "ru": "Берег Слоновой Кости"
+    }
+}, {
+    "id": 56,
+    "dataCode": "+385",
+    "name": {
+        "en": "Croatia",
+        "ru": "Хорватия"
+    }
+}, {
+    "id": 57,
+    "dataCode": "+53",
+    "name": {
+        "en": "Cuba",
+        "ru": "Куба"
+    }
+}, {
+    "id": 58,
+    "dataCode": "+599",
+    "name": {
+        "en": "Curaçao",
+        "ru": "Кюрасао"
+    }
+}, {
+    "id": 59,
+    "dataCode": "+357",
+    "name": {
+        "en": "Cyprus",
+        "ru": "Кипр"
+    }
+}, {
+    "id": 60,
+    "dataCode": "+420",
+    "name": {
+        "en": "Czechia",
+        "ru": "Чешская Республика"
+    }
+}, {
+    "id": 61,
+    "dataCode": "+45",
+    "name": {
+        "en": "Denmark",
+        "ru": "Дания"
+    }
+}, {
+    "id": 62,
+    "dataCode": "+253",
+    "name": {
+        "en": "Djibouti",
+        "ru": "Джибути"
+    }
+}, {
+    "id": 63,
+    "dataCode": "+1",
+    "name": {
+        "en": "Dominica",
+        "ru": "Доминика"
+    }
+}, {
+    "id": 64,
+    "dataCode": "+1",
+    "name": {
+        "en": "Dominican Republic",
+        "ru": "Доминиканская Республика"
+    }
+}, {
+    "id": 65,
+    "dataCode": "+593",
+    "name": {
+        "en": "Ecuador",
+        "ru": "Эквадор"
+    }
+}, {
+    "id": 66,
+    "dataCode": "+20",
+    "name": {
+        "en": "Egypt",
+        "ru": "Египет"
+    }
+}, {
+    "id": 67,
+    "dataCode": "+503",
+    "name": {
+        "en": "El Salvador",
+        "ru": "Сальвадор"
+    }
+}, {
+    "id": 68,
+    "dataCode": "+240",
+    "name": {
+        "en": "Equatorial Guinea",
+        "ru": "Экваториальная Гвинея"
+    }
+}, {
+    "id": 69,
+    "dataCode": "+291",
+    "name": {
+        "en": "Eritrea",
+        "ru": "Эритрея"
+    }
+}, {
+    "id": 70,
+    "dataCode": "+372",
+    "name": {
+        "en": "Estonia",
+        "ru": "Эстония"
+    }
+}, {
+    "id": 71,
+    "dataCode": "+251",
+    "name": {
+        "en": "Ethiopia",
+        "ru": "Эфиопия"
+    }
+}, {
+    "id": 72,
+    "dataCode": "+500",
+    "name": {
+        "en": "Falkland Islands",
+        "ru": "Фолклендские (Мальвинские) острова"
+    }
+}, {
+    "id": 73,
+    "dataCode": "+298",
+    "name": {
+        "en": "Faroe Islands",
+        "ru": "Фарерские острова"
+    }
+}, {
+    "id": 74,
+    "dataCode": "+679",
+    "name": {
+        "en": "Fiji",
+        "ru": "Фиджи"
+    }
+}, {
+    "id": 75,
+    "dataCode": "+358",
+    "name": {
+        "en": "Finland",
+        "ru": "Финляндия"
+    }
+}, {
+    "id": 76,
+    "dataCode": "+33",
+    "name": {
+        "en": "France",
+        "ru": "Франция"
+    }
+}, {
+    "id": 77,
+    "dataCode": "+594",
+    "name": {
+        "en": "French Guiana",
+        "ru": "Французская Гвиана"
+    }
+}, {
+    "id": 78,
+    "dataCode": "+689",
+    "name": {
+        "en": "French Polynesia",
+        "ru": "Французская Полинезия"
+    }
+}, {
+    "id": 80,
+    "dataCode": "+241",
+    "name": {
+        "en": "Gabon",
+        "ru": "Габон"
+    }
+}, {
+    "id": 81,
+    "dataCode": "+220",
+    "name": {
+        "en": "Gambia",
+        "ru": "Гамбия"
+    }
+}, {
+    "id": 82,
+    "dataCode": "+995",
+    "name": {
+        "en": "Georgia",
+        "ru": "Грузия"
+    }
+}, {
+    "id": 83,
+    "dataCode": "+49",
+    "name": {
+        "en": "Germany",
+        "ru": "Германия"
+    }
+}, {
+    "id": 84,
+    "dataCode": "+233",
+    "name": {
+        "en": "Ghana",
+        "ru": "Гана"
+    }
+}, {
+    "id": 85,
+    "dataCode": "+350",
+    "name": {
+        "en": "Gibraltar",
+        "ru": "Гибралтар"
+    }
+}, {
+    "id": 86,
+    "dataCode": "+30",
+    "name": {
+        "en": "Greece",
+        "ru": "Греция"
+    }
+}, {
+    "id": 87,
+    "dataCode": "+299",
+    "name": {
+        "en": "Greenland",
+        "ru": "Гренландия"
+    }
+}, {
+    "id": 88,
+    "dataCode": "+1",
+    "name": {
+        "en": "Grenada",
+        "ru": "Гренада"
+    }
+}, {
+    "id": 89,
+    "dataCode": "+590",
+    "name": {
+        "en": "Guadeloupe",
+        "ru": "Гваделупа"
+    }
+}, {
+    "id": 90,
+    "dataCode": "+1",
+    "name": {
+        "en": "Guam",
+        "ru": "Гуам"
+    }
+}, {
+    "id": 91,
+    "dataCode": "+502",
+    "name": {
+        "en": "Guatemala",
+        "ru": "Гватемала"
+    }
+}, {
+    "id": 92,
+    "dataCode": "+44",
+    "name": {
+        "en": "Guernsey",
+        "ru": "Гернси"
+    }
+}, {
+    "id": 93,
+    "dataCode": "+224",
+    "name": {
+        "en": "Guinea",
+        "ru": "Гвинея"
+    }
+}, {
+    "id": 94,
+    "dataCode": "+245",
+    "name": {
+        "en": "Guinea-Bissau",
+        "ru": "Гвинея-Бисау"
+    }
+}, {
+    "id": 95,
+    "dataCode": "+592",
+    "name": {
+        "en": "Guyana",
+        "ru": "Гайана"
+    }
+}, {
+    "id": 96,
+    "dataCode": "+509",
+    "name": {
+        "en": "Haiti",
+        "ru": "Гаити"
+    }
+}, {
+    "id": 99,
+    "dataCode": "+504",
+    "name": {
+        "en": "Honduras",
+        "ru": "Гондурас"
+    }
+}, {
+    "id": 100,
+    "dataCode": "+852",
+    "name": {
+        "en": "Hong Kong",
+        "ru": "Гонконг"
+    }
+}, {
+    "id": 101,
+    "dataCode": "+32",
+    "name": {
+        "en": "Hungary",
+        "ru": "Венгрия"
+    }
+}, {
+    "id": 102,
+    "dataCode": "+354",
+    "name": {
+        "en": "Iceland",
+        "ru": "Исландия"
+    }
+}, {
+    "id": 103,
+    "dataCode": "+91",
+    "name": {
+        "en": "India",
+        "ru": "Индия"
+    }
+}, {
+    "id": 104,
+    "dataCode": "+62",
+    "name": {
+        "en": "Indonesia",
+        "ru": "Индонезия"
+    }
+}, {
+    "id": 105,
+    "dataCode": "+98",
+    "name": {
+        "en": "Iran",
+        "ru": "Иран, Исламская Республика"
+    }
+}, {
+    "id": 106,
+    "dataCode": "+964",
+    "name": {
+        "en": "Iraq",
+        "ru": "Ирак"
+    }
+}, {
+    "id": 107,
+    "dataCode": "+353",
+    "name": {
+        "en": "Ireland",
+        "ru": "Ирландия"
+    }
+}, {
+    "id": 108,
+    "dataCode": "+44",
+    "name": {
+        "en": "Isle of Man",
+        "ru": "Остров Мэн"
+    }
+}, {
+    "id": 109,
+    "dataCode": "+972",
+    "name": {
+        "en": "Israel",
+        "ru": "Израиль"
+    }
+}, {
+    "id": 110,
+    "dataCode": "+39",
+    "name": {
+        "en": "Italy",
+        "ru": "Италия"
+    }
+}, {
+    "id": 111,
+    "dataCode": "+1",
+    "name": {
+        "en": "Jamaica",
+        "ru": "Ямайка"
+    }
+}, {
+    "id": 112,
+    "dataCode": "+55",
+    "name": {
+        "en": "Japan",
+        "ru": "Япония"
+    }
+}, {
+    "id": 113,
+    "dataCode": "+44",
+    "name": {
+        "en": "Jersey",
+        "ru": "Джерси"
+    }
+}, {
+    "id": 114,
+    "dataCode": "+962",
+    "name": {
+        "en": "Jordan",
+        "ru": "Иордания"
+    }
+}, {
+    "id": 115,
+    "dataCode": "+7",
+    "name": {
+        "en": "Kazakhstan",
+        "ru": "Казахстан"
+    }
+}, {
+    "id": 116,
+    "dataCode": "+254",
+    "name": {
+        "en": "Kenya",
+        "ru": "Кения"
+    }
+}, {
+    "id": 117,
+    "dataCode": "+686",
+    "name": {
+        "en": "Kiribati",
+        "ru": "Кирибати"
+    }
+}, {
+    "id": 120,
+    "dataCode": "+965",
+    "name": {
+        "en": "Kuwait",
+        "ru": "Кувейт"
+    }
+}, {
+    "id": 121,
+    "dataCode": "+996",
+    "name": {
+        "en": "Kyrgyzstan",
+        "ru": "Кыргызстан"
+    }
+}, {
+    "id": 122,
+    "dataCode": "+856",
+    "name": {
+        "en": "Laos",
+        "ru": "Лаосская Народно-Демократическая Республика"
+    }
+}, {
+    "id": 123,
+    "dataCode": "+371",
+    "name": {
+        "en": "Latvia",
+        "ru": "Латвия"
+    }
+}, {
+    "id": 124,
+    "dataCode": "+961",
+    "name": {
+        "en": "Lebanon",
+        "ru": "Ливан"
+    }
+}, {
+    "id": 125,
+    "dataCode": "+266",
+    "name": {
+        "en": "Lesotho",
+        "ru": "Лесото"
+    }
+}, {
+    "id": 126,
+    "dataCode": "+231",
+    "name": {
+        "en": "Liberia",
+        "ru": "Либерия"
+    }
+}, {
+    "id": 127,
+    "dataCode": "+218",
+    "name": {
+        "en": "Libya",
+        "ru": "Ливийская арабская джамахирия"
+    }
+}, {
+    "id": 128,
+    "dataCode": "+423",
+    "name": {
+        "en": "Liechtenstein",
+        "ru": "Лихтенштейн"
+    }
+}, {
+    "id": 129,
+    "dataCode": "+370",
+    "name": {
+        "en": "Lithuania",
+        "ru": "Литва"
+    }
+}, {
+    "id": 130,
+    "dataCode": "+352",
+    "name": {
+        "en": "Luxembourg",
+        "ru": "Люксембург"
+    }
+}, {
+    "id": 131,
+    "dataCode": "+853",
+    "name": {
+        "en": "Macao",
+        "ru": "Макао"
+    }
+}, {
+    "id": 132,
+    "dataCode": "+389",
+    "name": {
+        "en": "Macedonia",
+        "ru": "Македония, бывшая Югославская Республика"
+    }
+}, {
+    "id": 133,
+    "dataCode": "+261",
+    "name": {
+        "en": "Madagascar",
+        "ru": "Мадагаскар"
+    }
+}, {
+    "id": 134,
+    "dataCode": "+265",
+    "name": {
+        "en": "Malawi",
+        "ru": "Малави"
+    }
+}, {
+    "id": 135,
+    "dataCode": "+60",
+    "name": {
+        "en": "Malaysia",
+        "ru": "Малайзия"
+    }
+}, {
+    "id": 136,
+    "dataCode": "+960",
+    "name": {
+        "en": "Maldives",
+        "ru": "Мальдивы"
+    }
+}, {
+    "id": 137,
+    "dataCode": "+223",
+    "name": {
+        "en": "Mali",
+        "ru": "Мали"
+    }
+}, {
+    "id": 138,
+    "dataCode": "+356",
+    "name": {
+        "en": "Malta",
+        "ru": "Мальта"
+    }
+}, {
+    "id": 139,
+    "dataCode": "+692",
+    "name": {
+        "en": "Marshall Islands",
+        "ru": "Маршалловы острова"
+    }
+}, {
+    "id": 140,
+    "dataCode": "+596",
+    "name": {
+        "en": "Martinique",
+        "ru": "Мартиника"
+    }
+}, {
+    "id": 141,
+    "dataCode": "+222",
+    "name": {
+        "en": "Mauritania",
+        "ru": "Мавритания"
+    }
+}, {
+    "id": 142,
+    "dataCode": "+230",
+    "name": {
+        "en": "Mauritius",
+        "ru": "Маврикий"
+    }
+}, {
+    "id": 143,
+    "dataCode": "+262",
+    "name": {
+        "en": "Mayotte",
+        "ru": "Майотта"
+    }
+}, {
+    "id": 144,
+    "dataCode": "+52",
+    "name": {
+        "en": "Mexico",
+        "ru": "Мексика"
+    }
+}, {
+    "id": 145,
+    "dataCode": "+691",
+    "name": {
+        "en": "Micronesia",
+        "ru": "Микронезия, Федеративные Штаты"
+    }
+}, {
+    "id": 146,
+    "dataCode": "+373",
+    "name": {
+        "en": "Moldova",
+        "ru": "Молдова, Республика"
+    }
+}, {
+    "id": 147,
+    "dataCode": "+373",
+    "name": {
+        "en": "Monaco",
+        "ru": "Монако"
+    }
+}, {
+    "id": 148,
+    "dataCode": "+976",
+    "name": {
+        "en": "Mongolia",
+        "ru": "Монголия"
+    }
+}, {
+    "id": 149,
+    "dataCode": "+382",
+    "name": {
+        "en": "Montenegro",
+        "ru": "Черногория"
+    }
+}, {
+    "id": 150,
+    "dataCode": "+1",
+    "name": {
+        "en": "Montserrat",
+        "ru": "Монтсеррат"
+    }
+}, {
+    "id": 151,
+    "dataCode": "+212",
+    "name": {
+        "en": "Morocco",
+        "ru": "Марокко"
+    }
+}, {
+    "id": 152,
+    "dataCode": "+258",
+    "name": {
+        "en": "Mozambique",
+        "ru ": "Мозамбик"
+    }
+}, {
+    "id": 153,
+    "dataCode": "+95",
+    "name": {
+        "en": "Myanmar",
+        "ru": "Мьянма"
+    }
+}, {
+    "id": 154,
+    "dataCode": "+264",
+    "name": {
+        "en": "Namibia",
+        "ru": "Намибия"
+    }
+}, {
+    "id": 155,
+    "dataCode": "+674",
+    "name": {
+        "en": "Nauru",
+        "ru": "Науру"
+    }
+}, {
+    "id": 156,
+    "dataCode": "+977",
+    "name": {
+        "en": "Nepal",
+        "ru": "Непал"
+    }
+}, {
+    "id": 157,
+    "dataCode": "+31",
+    "name": {
+        "en": "Netherlands",
+        "ru": "Нидерланды"
+    }
+}, {
+    "id": 158,
+    "dataCode": "+687",
+    "name": {
+        "en": "New Caledonia",
+        "ru": "Новая Каледония"
+    }
+}, {
+    "id": 159,
+    "dataCode": "+64",
+    "name": {
+        "en": "New Zealand",
+        "ru": "Новая Зеландия"
+    }
+}, {
+    "id": 160,
+    "dataCode": "+505",
+    "name": {
+        "en": "Nicaragua",
+        "ru": "Никарагуа"
+    }
+}, {
+    "id": 161,
+    "dataCode": "+227",
+    "name": {
+        "en": "Niger",
+        "ru": "Нигер"
+    }
+}, {
+    "id": 162,
+    "dataCode": "+234",
+    "name": {
+        "en": "Nigeria",
+        "ru": "Нигерия"
+    }
+}, {
+    "id": 163,
+    "dataCode": "+683",
+    "name": {
+        "en": "Niue",
+        "ru": "Ниуэ"
+    }
+}, {
+    "id": 164,
+    "dataCode": "+672",
+    "name": {
+        "en": "Norfolk Island",
+        "ru": "Остров Норфолк"
+    }
+}, {
+    "id": 165,
+    "dataCode": "+1",
+    "name": {
+        "en": "Northern Mariana Islands",
+        "ru": "Северные Марианские острова "
+    }
+}, {
+    "id": 166,
+    "dataCode": "+47",
+    "name": {
+        "en": "Norway",
+        "ru": "Норвегия"
+    }
+}, {
+    "id": 167,
+    "dataCode": "+970",
+    "name": {
+        "en": "Palestine",
+        "ru": "Палестинская территория"
+    }
+}, {
+    "id": 168,
+    "dataCode": "+968",
+    "name": {
+        "en": "Oman",
+        "ru": "Оман"
+    }
+}, {
+    "id": 169,
+    "dataCode": "+92",
+    "name": {
+        "en": "Pakistan",
+        "ru": "Пакистан"
+    }
+}, {
+    "id": 170,
+    "dataCode": "+680",
+    "name": {
+        "en": "Palau",
+        "ru": "Палау "
+    }
+}, {
+    "id": 171,
+    "dataCode": "+507",
+    "name": {
+        "en": "Panama",
+        "ru": "Панама"
+    }
+}, {
+    "id": 172,
+    "dataCode": "+675",
+    "name": {
+        "en": "Papua New Guinea",
+        "ru": "Папуа - Новая Гвинея"
+    }
+}, {
+    "id": 173,
+    "dataCode": "+595",
+    "name": {
+        "en": "Paraguay",
+        "ru": "Парагвай"
+    }
+}, {
+    "id": 174,
+    "dataCode": "+51",
+    "name": {
+        "en": "Peru",
+        "ru": "Перу "
+    }
+}, {
+    "id": 175,
+    "dataCode": "+63",
+    "name": {
+        "en": "Philippines",
+        "ru": "Филиппины"
+    }
+}, {
+    "id": 177,
+    "dataCode": "+48",
+    "name": {
+        "en": "Poland",
+        "ru ": "Польша"
+    }
+}, {
+    "id": 178,
+    "dataCode": "+351",
+    "name": {
+        "en": "Portugal",
+        "ru": "Португалия"
+    }
+}, {
+    "id": 179,
+    "dataCode": "+1",
+    "name": {
+        "en": "Puerto Rico",
+        "ru": "Пуэрто - Рико"
+    }
+}, {
+    "id": 180,
+    "dataCode": "+974",
+    "name": {
+        "en": "Qatar",
+        "ru": "Катар "
+    }
+}, {
+    "id": 181,
+    "dataCode": "+262",
+    "name": {
+        "en": "Réunion",
+        "ru ": "Реюньон"
+    }
+}, {
+    "id": 182,
+    "dataCode": "+40",
+    "name": {
+        "en": "Romania",
+        "ru": "Румыния"
+    }
+}, {
+    "id": 183,
+    "dataCode": "+7",
+    "name": {
+        "en": "Russia",
+        "ru": "Россия"
+    }
+}, {
+    "id": 184,
+    "dataCode": "+250",
+    "name": {
+        "en": "Rwanda",
+        "ru": "Руанда"
+    }
+}, {
+    "id": 185,
+    "dataCode": "+590",
+    "name": {
+        "en": "Saint Barthélemy",
+        "ru": "Сент - Бартелеми"
+    }
+}, {
+    "id": 187,
+    "dataCode": "+1",
+    "name": {
+        "en": "Saint Kitts and Nevis",
+        "ru": "Сент - Китс и Невис"
+    }
+}, {
+    "id": 188,
+    "dataCode": "+1",
+    "name": {
+        "en": "Saint Lucia",
+        "ru": "Санкт - Люсия"
+    }
+}, {
+    "id": 189,
+    "dataCode": "+590",
+    "name": {
+        "en": "Saint Martin",
+        "ru": "Сен - Мартен(французская часть)"
+    }
+}, {
+    "id": 190,
+    "dataCode": "+508",
+    "name": {
+        "en": "Saint Pierre and Miquelon",
+        "ru": "Сен - Пьер и Микелон"
+    }
+}, {
+    "id": 191,
+    "dataCode": "+1",
+    "name": {
+        "en": "Saint Vincent and the Grenadines",
+        "ru": "Святой Винсент и Гренадины"
+    }
+}, {
+    "id": 192,
+    "dataCode": "+685",
+    "name": {
+        "en": "Samoa",
+        "ru": "Самоа"
+    }
+}, {
+    "id": 193,
+    "dataCode": "+378",
+    "name": {
+        "en": "San Marino",
+        "ru": "Сан - Марино"
+    }
+}, {
+    "id": 194,
+    "dataCode": "+239",
+    "name": {
+        "en": "Sao Tome and Principe",
+        "ru": "Сан - Томе и Принсипи"
+    }
+}, {
+    "id": 195,
+    "dataCode": "+966",
+    "name": {
+        "en": "Saudi Arabia",
+        "ru ": "Саудовская Аравия"
+    }
+}, {
+    "id": 196,
+    "dataCode": "+221",
+    "name": {
+        "en": "Senegal",
+        "ru": "Сенегал"
+    }
+}, {
+    "id": 197,
+    "dataCode": "+381",
+    "name": {
+        "en": "Serbia",
+        "ru": "Сербия"
+    }
+}, {
+    "id": 198,
+    "dataCode": "+248",
+    "name": {
+        "en": "Seychelles",
+        "ru": "Сейшельские Острова"
+    }
+}, {
+    "id": 199,
+    "dataCode": "+232",
+    "name": {
+        "en": "Sierra Leone",
+        "ru": "Сьерра - Леоне"
+    }
+}, {
+    "id": 200,
+    "dataCode": "+65",
+    "name": {
+        "en": "Singapore",
+        "ru": "Сингапур"
+    }
+}, {
+    "id": 201,
+    "dataCode": "+1",
+    "name": {
+        "en": "Sint Maarten",
+        "ru": "Синт - Маартен(Голландская часть)"
+    }
+}, {
+    "id": 202,
+    "dataCode": "+421",
+    "name": {
+        "en": "Slovakia",
+        "ru": "Словакия"
+    }
+}, {
+    "id": 203,
+    "dataCode": "+386",
+    "name": {
+        "en": "Slovenia",
+        "ru": "Словения"
+    }
+}, {
+    "id": 204,
+    "dataCode": "+677",
+    "name": {
+        "en": "Solomon Islands",
+        "ru": "Соломоновы острова "
+    }
+}, {
+    "id": 205,
+    "dataCode": "+252",
+    "name": {
+        "en": "Somalia",
+        "ru": "Сомали"
+    }
+}, {
+    "id": 206,
+    "dataCode": "+27",
+    "name": {
+        "en": "South Africa",
+        "ru": "Южная Африка"
+    }
+}, {
+    "id": 208,
+    "dataCode": "+211",
+    "name": {
+        "en": "South Sudan",
+        "ru": "Южный Судан"
+    }
+}, {
+    "id": 209,
+    "dataCode": "+34",
+    "name": {
+        "en": "Spain",
+        "ru": "Испания"
+    }
+}, {
+    "id": 210,
+    "dataCode": "+94",
+    "name": {
+        "en": "Sri Lanka",
+        "ru": "Шри - Ланка "
+    }
+}, {
+    "id": 211,
+    "dataCode": "+249",
+    "name": {
+        "en": "Sudan",
+        "ru": "Судан"
+    }
+}, {
+    "id": 212,
+    "dataCode": "+597",
+    "name": {
+        "en": "Suriname",
+        "ru": "Суринам"
+    }
+}, {
+    "id": 213,
+    "dataCode": "+47",
+    "name": {
+        "en": "Svalbard and Jan Mayen",
+        "ru": "Свальбард и Ян - Майен"
+    }
+}, {
+    "id": 214,
+    "dataCode": "+268",
+    "name": {
+        "en": "Swaziland",
+        "ru": "Свазиленд"
+    }
+}, {
+    "id": 215,
+    "dataCode": "+46",
+    "name": {
+        "en": "Sweden",
+        "ru": "Швеция"
+    }
+}, {
+    "id": 216,
+    "dataCode": "+41",
+    "name": {
+        "en": "Switzerland",
+        "ru": "Швейцария"
+    }
+}, {
+    "id": 217,
+    "dataCode": "+963",
+    "name": {
+        "en": "Syria",
+        "ru": "Сирийская Арабская Республика"
+    }
+}, {
+    "id": 218,
+    "dataCode": "+886",
+    "name": {
+        "en": "Taiwan",
+        "ru": "Тайвань, провинция Китая"
+    }
+}, {
+    "id": 219,
+    "dataCode": "+992",
+    "name": {
+        "en": "Tajikistan",
+        "ru": "Таджикистан"
+    }
+}, {
+    "id": 220,
+    "dataCode": "+255",
+    "name": {
+        "en": "Tanzania",
+        "ru": "Танзания, Объединенная Республика"
+    }
+}, {
+    "id": 221,
+    "dataCode": "+66",
+    "name": {
+        "en": "Thailand",
+        "ru": "Таиланд"
+    }
+}, {
+    "id": 222,
+    "dataCode": "+670",
+    "name": {
+        "en": "Timor - Leste",
+        "ru": "Тимор - Лешти"
+    }
+}, {
+    "id": 223,
+    "dataCode": "+228",
+    "name": {
+        "en": "Togo",
+        "ru": "Того"
+    }
+}, {
+    "id": 224,
+    "dataCode": "+690",
+    "name": {
+        "en": "Tokelau",
+        "ru": "Токелау"
+    }
+}, {
+    "id": 225,
+    "dataCode": "+676",
+    "name": {
+        "en": "Tonga",
+        "ru": "Тонга"
+    }
+}, {
+    "id": 226,
+    "dataCode": "+1",
+    "name": {
+        "en": "Trinidad and Tobago",
+        "ru": "Тринидад и Тобаго"
+    }
+}, {
+    "id": 227,
+    "dataCode": "+216",
+    "name": {
+        "en": "Tunisia",
+        "ru": "Тунис"
+    }
+}, {
+    "id": 228,
+    "dataCode": "+90",
+    "name": {
+        "en": "Turkey",
+        "ru": "Турция"
+    }
+}, {
+    "id": 229,
+    "dataCode": "+993",
+    "name": {
+        "en": "Turkmenistan",
+        "ru": "Туркменистан "
+    }
+}, {
+    "id": 230,
+    "dataCode": "+1",
+    "name": {
+        "en": "Turks and Caicos Islands",
+        "ru": "Острова Теркс и Кайкос"
+    }
+}, {
+    "id": 231,
+    "dataCode": "+688",
+    "name": {
+        "en": "Tuvalu",
+        "ru": "Тувалу "
+    }
+}, {
+    "id": 232,
+    "dataCode": "+256",
+    "name": {
+        "en": "Uganda",
+        "ru": "Уганда"
+    }
+}, {
+    "id": 233,
+    "dataCode": "+380",
+    "name": {
+        "en": "Ukraine",
+        "ru": "Украина"
+    }
+}, {
+    "id": 234,
+    "dataCode": "+971",
+    "name": {
+        "en": "United Arab Emirates",
+        "ru": "Объединенные Арабские Эмираты"
+    }
+}, {
+    "id": 235,
+    "dataCode": "+44",
+    "name": {
+        "en": "United Kingdom",
+        "ru": "Великобритания"
+    }
+}, {
+    "id": 236,
+    "dataCode": "+1",
+    "name": {
+        "en": "United States",
+        "ru": "Соединенные Штаты Америки"
+    }
+}, {
+    "id": 238,
+    "dataCode": "+598",
+    "name": {
+        "en": "Uruguay",
+        "ru": "Уругвай "
+    }
+}, {
+    "id": 239,
+    "dataCode": "+998",
+    "name": {
+        "en": "Uzbekistan",
+        "ru": "Узбекистан"
+    }
+}, {
+    "id": 240,
+    "dataCode": "+678",
+    "name": {
+        "en": "Vanuatu",
+        "ru": "Вануату"
+    }
+}, {
+    "id": 241,
+    "dataCode": "+58",
+    "name": {
+        "en": "Venezuela",
+        "ru": "Венесуэла, Боливарианская Республика "
+    }
+}, {
+    "id": 242,
+    "dataCode": "+84",
+    "name": {
+        "en": "Vietnam",
+        "ru": "Вьетнам"
+    }
+}, {
+    "id": 244,
+    "dataCode": "+1",
+    "name": {
+        "en": "Virgin Islands(USA)",
+        "ru": "Виргинские острова, США "
+    }
+}, {
+    "id": 245,
+    "dataCode": "+681",
+    "name": {
+        "en": "Wallis and Futuna",
+        "ru": "Уоллис и Футуна"
+    }
+}, {
+    "id": 246,
+    "dataCode": "+212",
+    "name": {
+        "en": "Western Sahara",
+        "ru": "Западная Сахара "
+    }
+}, {
+    "id": 247,
+    "dataCode": "+967",
+    "name": {
+        "en": "Yemen",
+        "ru": "Йемен"
+    }
+}, {
+    "id": 248,
+    "dataCode": "+260",
+    "name": {
+        "en": "Zimbabwe",
+        "ru": "Зимбабве "
+    }
+}, {
+    "id": 249,
+    "dataCode": "+263",
+    "name": {
+        "en": "Zambia",
+        "ru": "Замбия"
+    }
+}]
+

@@ -8,10 +8,15 @@
 body {
   font-family: 'Roboto Condensed', sans-serif;
   color: #ffffff;
-  background-color: #f8f8f8;
+  background: #f8f8f8;
+  overflow-x: hidden;
 }
 
 // ELEMENT HELPERS
+.orange {
+  color: #eb873e;
+}
+
 .btn {
   color: #ffffff;
   font-weight: bold;
@@ -20,22 +25,22 @@ body {
 }
 
 .main-btn {
+  font-family: 'Roboto Condensed', sans-serif;
   position: relative;
   z-index: 900;
   display: block;
   text-align: center;
-  margin: 42px auto;
+  margin: 0 auto;
   width: 500px;
   height: 60px;
   line-height: 60px;
   border-radius: 6px;
-  background-color: #2277ef;
+  background: #2277ef;
   font-size: 30px;
-  font-weight: bold;
-  text-transform: lowercase;
   box-shadow: 0px 0px 25px -20px rgba(0, 0, 0, 0.5);
   &:hover {
     box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1)
   }
 }
 
@@ -48,7 +53,6 @@ a {
   font-family: 'Raleway', sans-serif;
   font-size: 48px;
   font-weight: 300;
-  margin-top: 42px;
   margin-bottom: 42px;
 }
 
@@ -76,18 +80,22 @@ a {
   color: #515151;
 }
 
+.section {
+  padding: 42px 0;
+}
+
 // PAGE
 .header {
   position: fixed;
   width: 100%;
   padding: 0 10px;
-  z-index: 999;
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
   line-height: 70px;
-  background-color: #529af6;
+  background: #529af6;
   &-logo {
     height: 100%;
     margin-right: 54px;
@@ -133,12 +141,12 @@ a {
           background: url('../img/phone-icon.png');
           width: 35px;
           height: 35px;
-          vertical-align: sub;
+          vertical-align: middle;
           margin-right: 10px;
         }
       }
       .callback-btn {
-        background-color: #35c971;
+        background: #35c971;
         font-size: 18px;
         width: 230px;
         height: 36px;
@@ -156,26 +164,37 @@ a {
 }
 
 .screen {
-  background: url('../img/header-bg.png');
+  background: url('../img/header-bg.png') 50% 50% no-repeat;
+  background-size: cover;
   height: 600px; //temporary
   display: flex;
   justify-content: center;
   align-items: center;
   &-text {
     text-align: center;
+    .top-text {
+      font-family: 'Raleway', sans-serif;
+      display: block;
+      margin-bottom: 100px;
+    }
+    .title {
+      margin-bottom: 0;
+    }
   }
 }
 
-.second {
+.features {
   position: relative;
   .circle-bg {
-    top: -42px;
+    top: 0;
     right: 0;
     position: absolute;
     width: 855px;
     height: 135px;
-    background: url('../img/circle-header-bg.png');
-    background-position: bottom;
+    background: url('../img/circle-header-bg.png') 50% 100% no-repeat;
+  }
+  .main-btn {
+    margin-bottom: 48px;
   }
   .crypto {
     position: relative;
@@ -189,7 +208,8 @@ a {
       width: 100%;
       top: 0;
       left: 0;
-      background-image: linear-gradient(to left, #47aff9, rgba(156, 185, 255, 0.6));
+      background: linear-gradient(to left, #47aff9, rgba(156, 185, 255, 0.6));
+      background-size: cover;
       opacity: .1;
     }
     &-item {
@@ -204,15 +224,28 @@ a {
 
 .education {
   text-align: center;
+  padding: 42px 0;
   &-list {
     margin: 0 240px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     .bar {
+      position: relative;
       flex-grow: 1;
+      &-border {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 3px;
+        background: linear-gradient(to bottom, #5D17EA, #EDEF22);
+        opacity: .15;
+      }
     }
     &-item {
       text-align: left;
-      padding: 25px 26px 29px;
+      padding: 25px 0 25px 40px;
       font-size: 24px;
       font-weight: 300;
       margin: 25px;
@@ -234,8 +267,9 @@ a {
 .learning {
   position: relative;
   text-align: center;
-  height: 800px;
   background: linear-gradient(to bottom, #47aff9, #004cb7);
+  background-size: cover;
+  padding-bottom: 245px;
   .particles-bg {
     bottom: 0;
     position: absolute;
@@ -271,29 +305,179 @@ a {
 .knowledge {
   text-align: center;
   background: url('../img/knowledge-bg.png');
+  background-size: cover;
   height: 880px;
+  position: relative;
+  &-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .circle {
+      position: relative;
+      border: 5px solid #eaeaea;
+      border-radius: 50%;
+      width: 230px;
+      height: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .point {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        &:hover {
+          cursor: pointer;
+          .point-def {
+            background: linear-gradient(to bottom, #05cbff, #0063c0);
+          }
+          .point-hov {
+            opacity: 1;
+          }
+        }
+        &-def {
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          width: 18px;
+          height: 18px;
+          background: #05cafe;
+          z-index: 900;
+          border-radius: 50%;
+          transition: .2s linear;
+        }
+        &-hov {
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          background: linear-gradient(to bottom, #b280fe, #23eec7);
+          z-index: 100;
+          opacity: 0;
+          border-radius: 50%;
+          transition: .2s linear;
+        }
+      }
+      .p1 {
+        left: 19px;
+        bottom: 19px;
+      }
+      .p2 {
+        left: -15px;
+      }
+      .p3 {
+        left: 19px;
+        top: 19px;
+      }
+      .p4 {
+        top: -15px;
+      }
+      .p5 {
+        top: 19px;
+        right: 19px;
+      }
+      .p6 {
+        right: -15px;
+      }
+      .p7 {
+        right: 19px;
+        bottom: 19px;
+      }
+      .p8 {
+        bottom: -15px;
+      }
+      &-inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .arrow {
+          position: absolute;
+          top: 82px;
+          background: url('../img/btc-arrow.png') no-repeat;
+          width: 60px;
+          height: 83px;
+          transform-origin: 30px 30px;
+          transform: rotate(45deg);
+        }
+        .circle-white {
+          position: absolute; // top: 82px;
+          background: url('../img/circle-white.png') no-repeat;
+          background-size: contain;
+          width: 190px;
+          height: 190px;
+          transform: rotate(0deg);
+        }
+        .circle-orange {
+          position: absolute; // top: 82px;
+          background: url('../img/circle-orange.png') no-repeat;
+          background-size: contain;
+          width: 161px;
+          height: 155px;
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
 }
 
-.videos {
+.video {
   text-align: center;
+  &-container {
+    margin: 0 auto;
+    width: 1400px;
+  }
+  &-slider {
+    width: 100%;
+    height: 510px;
+    position: relative;
+    &-item {
+      display: inline;
+      cursor: pointer;
+      .inner {
+        width: 500px;
+        height: 200px;
+        background: #004cb7;
+      }
+    }
+  }
 }
 
 .who {
+  overflow: hidden;
   text-align: center;
   background: linear-gradient(to bottom, #76b3e8, #2a6dc7);
-  height: 700px;
+  background-size: cover;
   .info {
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .leftbar {
-      display: inline-block;
+      position: relative;
+      text-align: right;
+      flex-grow: 1;
+      padding-right: 150px;
+      .circle-bg {
+        position: absolute;
+        bottom: 0;
+        right: 25px;
+        width: 660px;
+        height: 657px;
+        background: url('../img/achievements-circle-left.png');
+        z-index: 0;
+      }
       .photo {
-        margin-left: 325px;
+        position: relative;
+        z-index: 500;
       }
     }
     .rightbar {
-      display: inline-block;
-      margin-left: 150px;
-      vertical-align: top;
+      text-align: left;
+      flex-grow: 1;
       .descr {
         font-family: 'Raleway', sans-serif;
         font-size: 34px;
@@ -304,33 +488,77 @@ a {
         margin-bottom: 20px;
         &-item {
           margin-right: 20px;
+          transition: .2s linear;
+        }
+        .linked {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background: url('../img/linked.png');
+          &:hover {
+            background: url('../img/linked-h.png');
+          }
+        }
+        .fb {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background: url('../img/fb.png');
+          &:hover {
+            background: url('../img/fb-h.png');
+          }
         }
       }
-      .achievements {
+      .achievements-wrapper {
         width: 780px;
-        border-radius: 6px;
-        background-color: #2277ef;
-        padding: 73px 130px 73px 50px;
-        &-list {
-          list-style: none;
-          list-style-position: inside;
-          font-size: 36px;
-          font-weight: 300;
-          &-item::before {
-            content: '';
-            display: inline-block;
-            width: 40px;
-            height: 34px;
-            margin-right: 35px;
-          }
-          .first::before {
-            background: url('../img/achievements-1.png');
-          }
-          .second::before {
-            background: url('../img/achievements-2.png');
-          }
-          .third::before {
-            background: url('../img/achievements-3.png');
+        position: relative;
+        .circle-bg {
+          position: absolute;
+          top: -151px;
+          right: -151px;
+          width: 302px;
+          height: 302px;
+          background: url('../img/achievements-circle-right.png');
+          z-index: 0;
+        }
+        .achievements {
+          position: relative;
+          border-radius: 6px;
+          padding: 73px 0 73px 50px;
+          background-color: #2277ef;
+          height: 100%;
+          width: 100%;
+          z-index: 200;
+          &-list {
+            font-size: 36px;
+            font-weight: 300;
+            list-style: none;
+            &-item {
+              margin-bottom: 25px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+              &::before {
+                content: '';
+                display: inline-block;
+                width: 40px;
+                height: 34px;
+                margin-right: 35px;
+                vertical-align: top;
+              }
+              .item-text {
+                display: inline-block;
+              }
+            }
+            .first::before {
+              background: url('../img/achievements-1.png');
+            }
+            .second::before {
+              background: url('../img/achievements-2.png');
+            }
+            .third::before {
+              background: url('../img/achievements-3.png');
+            }
           }
         }
       }
@@ -339,21 +567,154 @@ a {
 }
 
 .comments {
+  background: linear-gradient(to bottom, #f8f8f8, #eeeeee);
   text-align: center;
+  .main-btn {
+    margin-bottom: 22px;
+  }
+  .slider-container {
+    width: 1400px;
+    margin: 0 auto;
+    .slider {
+      margin-bottom: 40px;
+      &-item {
+        &-image {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
 }
 
 .join {
   position: relative;
   text-align: center;
-  height: 428px;
   background-image: linear-gradient(to bottom, #2b6ec7, #73b1e6);
+  background-size: cover;
   .particles-bg {
     bottom: 0;
     position: absolute;
     height: 100%;
     width: 100%;
+    z-index: 0;
   }
-  .orange {
-    color: #eb873e;
+  &-text {
+    position: relative;
+    z-index: 500;
+    .bottom {
+      margin-top: 15px;
+      display: block;
+    }
+  }
+}
+
+.main-form {
+  background: url('../img/main-form-bg.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  padding: 42px 0;
+  .form-panel {
+    margin: 0 auto;
+    width: 890px;
+    height: 685px;
+    .form-header {
+      text-align: center;
+      background-color: #4e8fe3;
+      height: 96px;
+      line-height: 96px;
+      font-size: 28px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .form-wrapper {
+      background: #d0d4d7;
+      padding: 20px 0 42px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .form {
+        width: 570px;
+        &-group {
+          margin-bottom: 15px;
+          label {
+            font-size: 16px;
+            font-weight: 300;
+            color: #474747;
+            display: block;
+            margin-bottom: 5px;
+          }
+          input,
+          select {
+            background: #fff;
+            font-family: 'Raleway', sans-serif;
+            display: block;
+            width: 100%;
+            height: 60px;
+            font-size: 22px;
+            border-radius: 7px;
+            border: none;
+            color: #474747;
+            &[name="firstName"],
+            &[name="email"],
+            &[name="leadCountryId"] {
+              padding-left: 15px;
+            }
+          }
+          .intl-tel-input {
+            display: block;
+            .country-list {
+              z-index: 999;
+            }
+          }
+        }
+        .main-btn {
+          width: 100%;
+          height: 80px;
+          font-size: 30px;
+          color: #fff;
+          font-weight: bold;
+          transition: .3s linear;
+          border: none;
+          margin-top: 42px;
+          cursor: pointer;
+        }
+      }
+    }
+    .form-footer {
+      background: #fff;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-item {
+        height: 15px;
+        margin: 0 20px;
+        &-image {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  padding-top: 20px;
+  height: 130px;
+  background-color: #000e1a;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  color: #ffffff;
+  &-text {
+    opacity: 0.45;
+    margin-bottom: 20px;
+  }
+  &-support,
+  &-copy {
+    display: block;
+    font-size: 12px;
+  }
+  &-support {
+    margin-bottom: 20px;
   }
 }
