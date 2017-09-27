@@ -302,9 +302,17 @@ a {
 }
 
 .knowledge {
+  position: relative;
   text-align: center;
   background: url('../img/knowledge-bg.png');
   background-size: cover;
+  .particles-bg {
+    opacity: .3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
   &-inner {
     height: 750px;
     display: flex;
@@ -348,6 +356,7 @@ a {
         .line {
           position: absolute;
           transition: .8s ease-in-out;
+          opacity: .2;
           &-text {
             text-align: left;
             font-size: 24px;
@@ -367,6 +376,7 @@ a {
           opacity: 1;
         }
         .line {
+          opacity: 1;
           transform: scale(1.05);
           &-text {
             opacity: 1;
