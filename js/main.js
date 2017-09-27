@@ -8,7 +8,7 @@ particlesJS.load('particles-js-bot', 'libs/particles/particles.json', function (
 
 $(document).ready(function () {
   // validation
-  $("form").validate({
+  $('form').validate({
     rules: {
       firstName: {
         required: true,
@@ -29,15 +29,15 @@ $(document).ready(function () {
 
   // intl-tel-input
   $('#phone').intlTelInput({
-    initialCountry: "auto",
+    initialCountry: 'auto',
     autoPlaceholder: true,
     separateDialCode: false,
     autoHideDialCode: false,
     formatOnDisplay: false,
     nationalMode: false,
     geoIpLookup: function (callback) { // phonecode by IP
-      $.get('https://ipinfo.io', function () {}, "jsonp").always(function (resp) {
-        var countryCode = (resp && resp.country) ? resp.country : "";
+      $.get('https://ipinfo.io', function () {}, 'jsonp').always(function (resp) {
+        var countryCode = (resp && resp.country) ? resp.country : '';
         callback(countryCode);
       });
     }
@@ -69,12 +69,12 @@ $(document).ready(function () {
       $.each(json, function (index, val) {
         leadCountryId[val.id] = val.name;
         leadCountryId[val.id].dataCode = val.dataCode;
-        $('#country').append('<option value="' + val.id + '">' + val.name.ru + '</option>');
+        $('#country').append('<option value=' + val.id + '>' + val.name.ru + '</option>');
       });
     });
 
     //select current country
-    $.getJSON("https://freegeoip.net/json/", function (data) {
+    $.getJSON('https://freegeoip.net/json/', function (data) {
       var current_country;
       $.each(leadCountryId, function (index, val) {
         if (val.en == data.country_name) {
@@ -121,15 +121,39 @@ $(document).ready(function () {
       countersun: -315 * 7
     }
   }
-  var turnCounter = 0;
+
+  function turnMove(elem) {
+    var elClass = $(elem).attr('class').split(' ')[1];
+    $('.arrow').css('transform', 'rotate(' + pointDeg[elClass].sun + 'deg)');
+    $('.circle-white').css('transform', 'rotate(' + (pointDeg[elClass].sun + 135) + 'deg)');
+    $('.circle-orange').css('transform', 'rotate(' + (pointDeg[elClass].countersun + 135) + 'deg)');
+  }
 
   $('.point').hover(function () {
-      var elClass = $(this).attr('class').split(' ')[1];
-      $('.arrow').css('transform', 'rotate(' + pointDeg[elClass].sun + 'deg)');
-      $('.circle-white').css('transform', 'rotate(' + (pointDeg[elClass].sun + 135) + 'deg)');
-      $('.circle-orange').css('transform', 'rotate(' + (pointDeg[elClass].countersun + 135) + 'deg)');
-    },
-    function () {
-      //function for onhover
-    })
+    turnMove($(this));
+    $('.point').removeClass('point-active');
+    $(this).addClass('point-active');
+  });
+
+  var start = $('.circle .point:first-child');
+
+  function frame() {
+    var el = $('.circle .point-active');
+    var nextEl = el.next('.point');
+
+    if ($('.circle').is(':hover')) {
+      return;
+    } else if (nextEl.length) {
+      console.log(el);
+      turnMove(nextEl);
+      nextEl.addClass('point-active');
+      el.removeClass('point-active');
+    } else {
+      turnMove(start);
+      el.removeClass('point-active');
+      start.addClass('point-active');
+    }
+  }
+
+  setInterval(frame, 3000);
 });
