@@ -9,7 +9,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   color: #ffffff;
   background: #f8f8f8;
-  overflow-x: hidden;
 }
 
 // ELEMENT HELPERS
@@ -306,17 +305,12 @@ a {
   text-align: center;
   background: url('../img/knowledge-bg.png');
   background-size: cover;
-  height: 880px;
-  position: relative;
   &-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
     .circle {
       position: relative;
       border: 5px solid #eaeaea;
@@ -337,6 +331,12 @@ a {
           }
           .point-hov {
             opacity: 1;
+          }
+          .line {
+            transform: scale(1.05);
+            &-text {
+              opacity: 1;
+            }
           }
         }
         &-def {
@@ -360,34 +360,145 @@ a {
           border-radius: 50%;
           transition: .2s linear;
         }
+        .line {
+          position: absolute;
+          transition: .8s ease-in-out;
+          &-text {
+            text-align: left;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 0.88;
+            opacity: 0;
+            transition: .5s ease-in-out;
+          }
+        }
       }
       .p1 {
-        left: 19px;
-        bottom: 19px;
+        bottom: -15px;
+        &-line {
+          left: -9px;
+          top: 20px;
+          width: 70px;
+          height: 196px;
+          background: url('../img/p1.png');
+          &-text {
+            width: 240px;
+            position: absolute;
+            top: 210px;
+          }
+        }
       }
       .p2 {
-        left: -15px;
+        left: 19px;
+        bottom: 19px;
+        &-line {
+          top: 15px;
+          right: 15px;
+          width: 523px;
+          height: 232px;
+          background: url('../img/p2.png');
+          &-text {
+            width: 315px;
+            position: absolute;
+            top: 250px;
+          }
+        }
       }
       .p3 {
-        left: 19px;
-        top: 19px;
+        left: -15px;
+        &-line {
+          top: -147px;
+          right: 15px;
+          width: 575px;
+          height: 236px;
+          background: url('../img/p3.png');
+          &-text {
+            width: 320px;
+            position: absolute;
+            top: 60px;
+          }
+        }
       }
       .p4 {
-        top: -15px;
+        left: 19px;
+        top: 19px;
+        &-line {
+          right: 10px;
+          bottom: 10px;
+          width: 318px;
+          height: 198px;
+          background: url('../img/p4.png');
+          &-text {
+            width: 260px;
+            position: absolute;
+            top: 60px;
+          }
+        }
       }
       .p5 {
-        top: 19px;
-        right: 19px;
+        top: -15px;
+        &-line {
+          right: -4px;
+          bottom: 5px;
+          width: 70px;
+          height: 149px;
+          background: url('../img/p5.png');
+          &-text {
+            width: 240px;
+            position: absolute;
+            top: 60px;
+          }
+        }
       }
       .p6 {
-        right: -15px;
+        top: 19px;
+        right: 19px;
+        &-line {
+          bottom: 10px;
+          left: 5px;
+          width: 396px;
+          height: 210px;
+          background: url('../img/p6.png');
+          &-text {
+            width: 240px;
+            position: absolute;
+            left: 325px;
+            top: 65px;
+          }
+        }
       }
       .p7 {
-        right: 19px;
-        bottom: 19px;
+        right: -15px;
+        &-line {
+          left: 20px;
+          top: -75px;
+          width: 530px;
+          height: 126px;
+          background: url('../img/p7.png');
+          &-text {
+            width: 240px;
+            position: absolute;
+            left: 460px;
+            top: 60px;
+          }
+        }
       }
       .p8 {
-        bottom: -15px;
+        right: 19px;
+        bottom: 19px;
+        &-line {
+          top: 11px;
+          left: 11px;
+          width: 568px;
+          height: 178px;
+          background: url('../img/p8.png');
+          &-text {
+            width: 240px;
+            position: absolute;
+            left: 495px;
+            top: 175px;
+          }
+        }
       }
       &-inner {
         width: 100%;
@@ -402,7 +513,6 @@ a {
           width: 60px;
           height: 83px;
           transform-origin: 30px 30px;
-          transform: rotate(45deg);
           transition: .4s linear;
         }
         .circle-white {
@@ -411,7 +521,7 @@ a {
           background-size: contain;
           width: 190px;
           height: 190px;
-          transform: rotate(180deg);
+          transform: rotate(135deg);
           transition: .7s linear;
         }
         .circle-orange {
@@ -420,7 +530,7 @@ a {
           background-size: contain;
           width: 161px;
           height: 155px;
-          transform: rotate(180deg);
+          transform: rotate(135deg);
           transition: 1s linear;
         }
       }

@@ -89,35 +89,35 @@ $(document).ready(function () {
 
   var pointDeg = {
     p1: {
-      sun: 45,
+      sun: 45 * 0,
       countersun: 0
     },
     p2: {
-      sun: 45 * 2,
+      sun: 45,
       countersun: -315
     },
     p3: {
-      sun: 45 * 3,
+      sun: 45 * 2,
       countersun: -315 * 2
     },
     p4: {
-      sun: 45 * 4,
+      sun: 45 * 3,
       countersun: -315 * 3
     },
     p5: {
-      sun: 45 * 5,
+      sun: 45 * 4,
       countersun: -315 * 4
     },
     p6: {
-      sun: 45 * 6,
+      sun: 45 * 5,
       countersun: -315 * 5
     },
     p7: {
-      sun: 45 * 7,
+      sun: 45 * 6,
       countersun: -315 * 6
     },
     p8: {
-      sun: 45 * 8,
+      sun: 45 * 7,
       countersun: -315 * 7
     }
   }
@@ -127,7 +127,7 @@ $(document).ready(function () {
       var elClass = $(this).attr('class').split(' ')[1];
       $('.arrow').css('transform', 'rotate(' + pointDeg[elClass].sun + 'deg)');
       $('.circle-white').css('transform', 'rotate(' + (pointDeg[elClass].sun + 135) + 'deg)');
-      $('.circle-orange').css('transform', 'rotate(' + (pointDeg[elClass].countersun + 180) + 'deg)');
+      $('.circle-orange').css('transform', 'rotate(' + (pointDeg[elClass].countersun + 135) + 'deg)');
     },
     function () {
       //function for onhover
