@@ -9,21 +9,20 @@ particlesJS.load('particles-js-bot', 'libs/particles/particles.json', function (
 $(document).ready(function () {
   // validation
   $("form").validate({
-    // submitHandler: function () {},
     rules: {
-      name: {
+      firstName: {
         required: true,
-        minLength: 3,
-        maxLength: 30
+        minlength: 3,
+        maxlength: 30
       },
       email: {
-        required: true,
-        email: true,
+        required: true
       },
-      phone: {
+      leadPhone: {
         required: true,
-        minLength: 9,
-        maxLength: 20
+        minlength: 9,
+        maxlength: 20
+
       }
     }
   });
@@ -48,7 +47,7 @@ $(document).ready(function () {
   $('.slider').slick({
     dots: true,
     autoplay: true,
-    autoplaySpeed: 15000,
+    autoplaySpeed: 15000
   });
 
   //scroll animation for links and buttons
@@ -87,4 +86,50 @@ $(document).ready(function () {
       $('#country').trigger('change');
     })
   };
+
+  var pointDeg = {
+    p1: {
+      sun: 45,
+      countersun: 0
+    },
+    p2: {
+      sun: 45 * 2,
+      countersun: -315
+    },
+    p3: {
+      sun: 45 * 3,
+      countersun: -315 * 2
+    },
+    p4: {
+      sun: 45 * 4,
+      countersun: -315 * 3
+    },
+    p5: {
+      sun: 45 * 5,
+      countersun: -315 * 4
+    },
+    p6: {
+      sun: 45 * 6,
+      countersun: -315 * 5
+    },
+    p7: {
+      sun: 45 * 7,
+      countersun: -315 * 6
+    },
+    p8: {
+      sun: 45 * 8,
+      countersun: -315 * 7
+    }
+  }
+  var turnCounter = 0;
+
+  $('.point').hover(function () {
+      var elClass = $(this).attr('class').split(' ')[1];
+      $('.arrow').css('transform', 'rotate(' + pointDeg[elClass].sun + 'deg)');
+      $('.circle-white').css('transform', 'rotate(' + (pointDeg[elClass].sun + 135) + 'deg)');
+      $('.circle-orange').css('transform', 'rotate(' + (pointDeg[elClass].countersun + 180) + 'deg)');
+    },
+    function () {
+      //function for onhover
+    })
 });
