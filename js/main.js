@@ -4,7 +4,32 @@ particlesJS.load('particles-js-knowledge', 'libs/particles/particles.json', func
 particlesJS.load('particles-js-bot', 'libs/particles/particles.json', function () {});
 
 $(document).ready(function () {
-  //progress circle
+
+  var leadCountryId = {};
+
+  //get country phone codes
+  $.getJSON('json/countries.json', function (json, textStatus) {
+    $.each(json, function (index, val) {
+      leadCountryId[val.id] = val.name;
+      leadCountryId[val.id].dataCode = val.dataCode;
+      $('#country').append('<option value=' + val.id + '>' + val.name.ru + '</option>');
+    });
+  });
+
+  //select current country by IP
+  $.getJSON('https://freegeoip.net/json/', function (data) {
+    var current_country;
+    $.each(leadCountryId, function (index, val) {
+      if (val.en == data.country_name) {
+        current_country = index;
+        ourLeadCountry = current_country;
+      }
+    });
+    $('#country').val(current_country);
+    $('#country').trigger('change');
+  });
+
+  //progress circles
   $('.order').circleProgress({
     value: 0,
     size: 65,
@@ -27,26 +52,6 @@ $(document).ready(function () {
       value: 0,
       animationStartValue: 1.0
     });
-  });
-
-  // validation
-  $('form').validate({
-    rules: {
-      firstName: {
-        required: true,
-        minlength: 3,
-        maxlength: 30
-      },
-      email: {
-        required: true
-      },
-      leadPhone: {
-        required: true,
-        minlength: 9,
-        maxlength: 20
-      }
-    },
-    errorElement: 'span'
   });
 
   // intl-tel-input
@@ -83,32 +88,7 @@ $(document).ready(function () {
     return false;
   });
 
-  var leadCountryId = {};
-
-  //getting country phone codes
-  if ($('#country').length) {
-    $.getJSON('json/countries.json', function (json, textStatus) {
-      $.each(json, function (index, val) {
-        leadCountryId[val.id] = val.name;
-        leadCountryId[val.id].dataCode = val.dataCode;
-        $('#country').append('<option value=' + val.id + '>' + val.name.ru + '</option>');
-      });
-    });
-
-    //select current country
-    $.getJSON('https://freegeoip.net/json/', function (data) {
-      var current_country;
-      $.each(leadCountryId, function (index, val) {
-        if (val.en == data.country_name) {
-          current_country = index;
-          ourLeadCountry = current_country;
-        }
-      });
-      $('#country').val(current_country);
-      $('#country').trigger('change');
-    })
-  };
-
+  //mechanism circle
   var pointDeg = {
     p1: {
       sun: 45 * 0,

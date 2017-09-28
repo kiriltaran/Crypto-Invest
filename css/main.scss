@@ -795,12 +795,12 @@ a {
     .form-wrapper {
       position: relative;
       background: #d0d4d7;
-      padding: 20px 0 42px 0;
+      padding: 20px 160px 42px;
       display: flex;
       justify-content: center;
       align-items: center;
       .form {
-        width: 570px;
+        width: 100%;
         &-group {
           margin-bottom: 25px;
           label {

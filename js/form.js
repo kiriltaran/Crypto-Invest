@@ -1,16 +1,3 @@
-function yaLead() {
-  if (typeof yaCounter45190404 != 'undefined') {
-    yaCounter45190404.reachGoal('LEAD');
-  }
-};
-
-function gaLead() {
-  if (typeof ga != 'undefined') {
-    ga('send', 'event', 'lead', 'success-lead-form');
-  }
-};
-
-//init section
 var constants = {};
 var leadCountryId = {};
 var urlParams = {};
@@ -50,37 +37,6 @@ $(document).ready(function () {
     return str.join("&");
   };
 
-  //getting country phone codes
-  if ($('.leadCountryId').length) {
-    $.getJSON('json/countries.json', function (json, textStatus) {
-      $.each(json, function (index, val) {
-        leadCountryId[val.id] = val.name;
-        leadCountryId[val.id].dataCode = val.dataCode;
-        $('.leadCountryId').append('<option value="' + val.id + '">' + val.name.en + '</option>');
-      });
-      $('#regForm').attr('data-info', JSON.stringify(json));
-    });
-
-    //change phone code when changed country
-    $(document).on('change', '.leadCountryId', function (event) {
-      event.preventDefault();
-      $('.phone-code').val(leadCountryId[$(this).val()].dataCode);
-
-    });
-    //select current country
-    $.getJSON("https://freegeoip.net/json/", function (data) {
-      var current_country;
-      $.each(leadCountryId, function (index, val) {
-        if (val.en == data.country_name) {
-          current_country = index;
-          ourLeadCountry = current_country;
-        }
-      });
-      $('.leadCountryId').val(current_country);
-      $('.leadCountryId').trigger('change');
-    })
-  };
-
   //parse url params
   function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
@@ -94,21 +50,6 @@ $(document).ready(function () {
       }
     }
   };
-
-  setTimeout(function () {
-    $('form input:not([type=submit])').each(function (index, el) {
-      var name = $(this).attr('name');
-      $(this).val(getUrlParameter(name));
-    });
-    $('form select option').each(function (index, el) {
-      var name = $(this).closest('select').attr('name');
-      if ($(this).val() == getUrlParameter(name)) {
-        $(this).attr('selected', true);
-        $(this).closest('select').val(getUrlParameter(name));
-        $(this).closest('select').trigger('change');
-      }
-    });
-  }, 100);
 
   // send info to server and get result
   function sendData_s(params) {
@@ -163,11 +104,6 @@ $(document).ready(function () {
 
   //script of validation
   window.applyValidation = function (validateOnBlur, forms, messagePosition, xtraModule) {
-
-    if (!forms)
-      forms = 'form';
-    if (!messagePosition)
-      messagePosition = 'top';
 
     $.validate({
       form: forms,
