@@ -1,15 +1,34 @@
 // particles.js
-particlesJS.load('particles-js', 'libs/particles/particles.json', function () {
-  console.log('callback - particles.js config loaded');
-});
-particlesJS.load('particles-js-knowledge', 'libs/particles/particles.json', function () {
-  console.log('callback - particles.js config loaded');
-});
-particlesJS.load('particles-js-bot', 'libs/particles/particles.json', function () {
-  console.log('callback - particles.js config loaded');
-});
+particlesJS.load('particles-js', 'libs/particles/particles.json', function () {});
+particlesJS.load('particles-js-knowledge', 'libs/particles/particles.json', function () {});
+particlesJS.load('particles-js-bot', 'libs/particles/particles.json', function () {});
 
 $(document).ready(function () {
+  //progress circle
+  $('.order').circleProgress({
+    value: 0,
+    size: 65,
+    emptyFill: 'transparent',
+    insertMode: 'append',
+    thickness: 10
+  });
+
+  $('.education-list-item').hover(function () {
+    $(this).find('.order').circleProgress({
+      value: 1,
+      fill: {
+        color: '#2277ef'
+      },
+      emptyFill: 'transparent',
+      animationStartValue: 0.0,
+    });
+  }, function () {
+    $(this).find('.order').circleProgress({
+      value: 0,
+      animationStartValue: 1.0
+    });
+  });
+
   // validation
   $('form').validate({
     rules: {
@@ -25,7 +44,6 @@ $(document).ready(function () {
         required: true,
         minlength: 9,
         maxlength: 20
-
       }
     }
   });
@@ -158,5 +176,5 @@ $(document).ready(function () {
     }
   }
 
-  setInterval(frame, 3000);
+  setInterval(frame, 2000);
 });
