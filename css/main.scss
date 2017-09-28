@@ -11,6 +11,13 @@ body {
   background: #f8f8f8;
 }
 
+:active,
+ :hover,
+ :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 // ELEMENT HELPERS
 .orange {
   color: #eb873e;
@@ -340,6 +347,7 @@ a {
     z-index: 0;
   }
   &-inner {
+    overflow-x: hidden;
     height: 750px;
     display: flex;
     justify-content: center;
@@ -400,6 +408,7 @@ a {
         }
         .point-hov {
           opacity: 1;
+          z-index: 500;
         }
         .line {
           opacity: 1;
@@ -416,7 +425,7 @@ a {
           top: 20px;
           width: 70px;
           height: 196px;
-          background: url('../img/p1.png');
+          background: url('../img/01.png');
           &-text {
             width: 240px;
             position: absolute;
@@ -432,7 +441,7 @@ a {
           right: 15px;
           width: 523px;
           height: 232px;
-          background: url('../img/p2.png');
+          background: url('../img/02.png');
           &-text {
             width: 315px;
             position: absolute;
@@ -443,11 +452,11 @@ a {
       .p3 {
         left: -15px;
         &-line {
-          top: -147px;
+          top: -80px;
           right: 15px;
           width: 575px;
-          height: 236px;
-          background: url('../img/p3.png');
+          height: 129px;
+          background: url('../img/03.png');
           &-text {
             width: 320px;
             position: absolute;
@@ -461,9 +470,9 @@ a {
         &-line {
           right: 10px;
           bottom: 10px;
-          width: 318px;
+          width: 319px;
           height: 198px;
-          background: url('../img/p4.png');
+          background: url('../img/04.png');
           &-text {
             width: 260px;
             position: absolute;
@@ -478,7 +487,7 @@ a {
           bottom: 5px;
           width: 70px;
           height: 149px;
-          background: url('../img/p5.png');
+          background: url('../img/05.png');
           &-text {
             width: 240px;
             position: absolute;
@@ -490,11 +499,11 @@ a {
         top: 19px;
         right: 19px;
         &-line {
-          bottom: 10px;
-          left: 5px;
+          bottom: 15px;
+          left: 15px;
           width: 396px;
           height: 210px;
-          background: url('../img/p6.png');
+          background: url('../img/06.png');
           &-text {
             width: 240px;
             position: absolute;
@@ -510,7 +519,7 @@ a {
           top: -75px;
           width: 530px;
           height: 126px;
-          background: url('../img/p7_2.png');
+          background: url('../img/07.png');
           &-text {
             width: 240px;
             position: absolute;
@@ -523,11 +532,12 @@ a {
         right: 19px;
         bottom: 19px;
         &-line {
-          top: 11px;
-          left: 11px;
+          top: 15px;
+          left: 20px;
           width: 568px;
           height: 178px;
-          background: url('../img/p8.png');
+          background: url('../img/08.png');
+          z-index: 0;
           &-text {
             width: 240px;
             position: absolute;
@@ -724,8 +734,8 @@ a {
     margin-bottom: 22px;
   }
   .slider-container {
-    width: 1400px;
-    margin: 0 auto;
+    // width: 1400px;
+    // margin: 0 auto;
     .slider {
       margin-bottom: 40px;
       &-item {
@@ -783,6 +793,7 @@ a {
       text-transform: uppercase;
     }
     .form-wrapper {
+      position: relative;
       background: #d0d4d7;
       padding: 20px 0 42px 0;
       display: flex;
@@ -791,7 +802,7 @@ a {
       .form {
         width: 570px;
         &-group {
-          margin-bottom: 15px;
+          margin-bottom: 25px;
           label {
             font-size: 16px;
             font-weight: 300;
@@ -808,13 +819,23 @@ a {
             height: 60px;
             font-size: 22px;
             border-radius: 7px;
-            border: none;
+            border: solid 2px transparent;
             color: #474747;
             &[name="firstName"],
             &[name="email"],
             &[name="leadCountryId"] {
               padding-left: 15px;
             }
+            &.error {
+              border: solid 2px #ff3434;
+            }
+          }
+          span.error {
+            position: absolute;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            color: #ff3535;
           }
           .intl-tel-input {
             display: block;

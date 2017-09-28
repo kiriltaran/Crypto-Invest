@@ -45,7 +45,8 @@ $(document).ready(function () {
         minlength: 9,
         maxlength: 20
       }
-    }
+    },
+    errorElement: 'span'
   });
 
   // intl-tel-input
@@ -165,7 +166,6 @@ $(document).ready(function () {
     if ($('.circle').is(':hover')) {
       return;
     } else if (nextEl.length) {
-      console.log(el);
       turnMove(nextEl);
       nextEl.addClass('point-active');
       el.removeClass('point-active');

@@ -44,10 +44,10 @@
     transition: .2s linear; }
 
 .slick-prev {
-  left: 0; }
+  left: 190px; }
   [dir="rtl"] .slick-prev {
     left: auto;
-    right: 0; }
+    right: 190px; }
   .slick-prev:before {
     content: '';
     background: url("../../img/comments-left.png");
@@ -66,9 +66,9 @@
       background: url("../../img/comments-left-h.png"); }
 
 .slick-next {
-  right: 0; }
+  right: 190px; }
   [dir="rtl"] .slick-next {
-    left: 0;
+    left: 190px;
     right: auto; }
   .slick-next:before {
     content: '';
