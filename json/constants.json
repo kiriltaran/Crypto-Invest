@@ -2,6 +2,6 @@
   "projectId": 13,
   "apiUrl": "https://dev.tramplin-uspeha.ru:9000/api/v1/subscription",
   "leadCurrency": "USD",
-  "lastName": "LeadUser",
+  "lastName": "User",
   "leadPassword": "00000000"
 }

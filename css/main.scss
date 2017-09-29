@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: 'Roboto Condensed', sans-serif;
   color: #ffffff;
@@ -777,9 +778,21 @@ a {
 }
 
 .main-form {
+  position: relative;
   background: url('../img/main-form-bg.jpg') 50% 50% no-repeat;
   background-size: cover;
   padding: 42px 0;
+  .circle-bg {
+    position: absolute;
+    &-left {
+      background: url('../img/footer-circle-left.png');
+      top: 0;
+      left: 0;
+      width: 380px;
+      height: 380px;
+    }
+    &-right {}
+  }
   .form-panel {
     margin: 0 auto;
     width: 890px;
@@ -898,3 +911,5 @@ a {
     margin-bottom: 20px;
   }
 }
+
+@import 'media.scss';

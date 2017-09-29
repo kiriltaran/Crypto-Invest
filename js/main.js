@@ -77,6 +77,9 @@ $(document).ready(function () {
     autoplaySpeed: 15000
   });
 
+  // slider for comments
+  $('.video-slider').slick({});
+
   //scroll animation for links and buttons
   $('.btn, .link').click(function () {
     var scroll_el = $(this).attr('href');

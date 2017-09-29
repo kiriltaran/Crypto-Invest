@@ -1,0 +1,27 @@
+@media (max-width: 1900px) {
+  .education {
+    &-list {
+      margin: auto;
+    }
+  }
+  .learning {
+    &-list {
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 1768px) {
+  .knowledge {
+    display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .education {
+    &-list {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+}
