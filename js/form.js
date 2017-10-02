@@ -66,6 +66,9 @@ $(document).ready(function () {
     params = urlParams;
     params.landingPage = constants.landingPage;
     params.projectId = constants.projectId;
+    params.lastName = constants.lastName;
+    params.leadPassword = constants.leadPassword;
+    params.leadCurrency = constants.leadCurrency;
 
     $.each(fields, function (index, val) {
       params[val.name] = val.value;
@@ -76,6 +79,7 @@ $(document).ready(function () {
 
 
   function sendRequest(params) {
+    $('button').attr('disabled');
     var http = new XMLHttpRequest();
     var url = constants.apiUrl;
 
@@ -86,25 +90,28 @@ $(document).ready(function () {
       if (http.readyState == 4) {
         if (http.status != 200 && http.status != 201) {
           //IT IS ERROR RESPONSE
+          $('button').removeAttr('disabled');
           return true;
         } else {
           //IT IS SUCCESS RESPONSE
           var result = JSON.parse(http.responseText);
           if (result.operation_status === 'succeed') {
-            var getParamObj = {};
-            if (result.data.token) {
-              getParamObj.token = result.data.token;
-            }
-            if (Number.isInteger(result.data)) {
-              getParamObj.id = result.data;
-            }
-            if (params.firstName) {
-              getParamObj.firstName = params.firstName;
-            }
-            if (params.email) {
-              getParamObj.email = params.email;
-            }
-            var getParamString = serialize(getParamObj);
+            // GET STRING FOR REDIRECT
+            // var getParamObj = {};
+            // if (result.data.token) {
+            //   getParamObj.token = result.data.token;
+            // }
+            // if (Number.isInteger(result.data)) {
+            //   getParamObj.id = result.data;
+            // }
+            // if (params.firstName) {
+            //   getParamObj.firstName = params.firstName;
+            // }
+            // if (params.email) {
+            //   getParamObj.email = params.email;
+            // }
+            // var getParamString = serialize(getParamObj);
+            //location.href = params.action + '?' + getParamString;
 
             $('button').removeAttr('disabled');
           } else {
