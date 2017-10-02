@@ -29,6 +29,11 @@ $(document).ready(function () {
     $('#country').trigger('change');
   });
 
+  //menu burger
+  $('.nav-icon').click(function () {
+    $('.nav-list').slideToggle();
+  });
+
   //progress circles
   $('.order').circleProgress({
     value: 0,
