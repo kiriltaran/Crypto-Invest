@@ -382,7 +382,7 @@ a {
       .text {
         margin-left: 75px;
         @media screen and (max-width: 600px) {
-          line-height: 20px;
+          line-height: 25px;
           display: inline-block;
         }
       }
@@ -397,6 +397,7 @@ a {
       }
       @media screen and (max-width: 600px) {
         margin-bottom: 15px;
+        padding-left: 10px;
       }
     }
   }
@@ -994,7 +995,7 @@ a {
               border: solid 2px #ff3434;
             }
             @media screen and (max-width: 500px) {
-              height: 40px;
+              height: 45px;
             }
           }
           span.error {
@@ -1010,6 +1011,9 @@ a {
               z-index: 999;
             }
           }
+          @media screen and (max-width: 500px) {
+            margin-bottom: 20px;
+          }
         }
         .main-btn {
           width: 100%;
@@ -1023,6 +1027,8 @@ a {
           cursor: pointer;
           @media screen and (max-width: 500px) {
             font-size: 25px;
+            margin-top: 21px;
+            height: 60px;
           }
           @media screen and (max-width: 400px) {
             font-size: 20px;
