@@ -36,7 +36,7 @@ $(document).ready(function () {
     $('.nav-list').toggleClass('show');
   });
 
-  if (screen.width > 968) {
+  if (screen.width <= 968) {
     $('.nav-list-item a').click(function () {
       $('.nav-list').toggleClass('show');
     });
