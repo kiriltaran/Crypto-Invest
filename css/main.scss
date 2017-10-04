@@ -142,6 +142,7 @@ a {
     }
   }
   .nav {
+    z-index: 900;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -167,6 +168,8 @@ a {
       }
     }
     &-list {
+      position: relative;
+      z-index: 500;
       margin-left: 65px;
       display: flex;
       justify-content: space-around;

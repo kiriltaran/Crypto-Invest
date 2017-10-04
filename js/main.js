@@ -1,7 +1,9 @@
 // particles.js
-particlesJS.load('particles-js', 'libs/particles/particles.json', function () {});
-particlesJS.load('particles-js-knowledge', 'libs/particles/particles.json', function () {});
-particlesJS.load('particles-js-bot', 'libs/particles/particles.json', function () {});
+if (screen.width > 968) {
+  particlesJS.load('particles-js', 'libs/particles/particles.json', function () {});
+  particlesJS.load('particles-js-knowledge', 'libs/particles/particles.json', function () {});
+  particlesJS.load('particles-js-bot', 'libs/particles/particles.json', function () {});
+}
 
 $(document).ready(function () {
 
@@ -100,73 +102,74 @@ $(document).ready(function () {
     return false;
   });
 
-  //mechanism circle
-  var pointDeg = {
-    p1: {
-      sun: 45 * 0,
-      countersun: 0
-    },
-    p2: {
-      sun: 45,
-      countersun: -315
-    },
-    p3: {
-      sun: 45 * 2,
-      countersun: -315 * 2
-    },
-    p4: {
-      sun: 45 * 3,
-      countersun: -315 * 3
-    },
-    p5: {
-      sun: 45 * 4,
-      countersun: -315 * 4
-    },
-    p6: {
-      sun: 45 * 5,
-      countersun: -315 * 5
-    },
-    p7: {
-      sun: 45 * 6,
-      countersun: -315 * 6
-    },
-    p8: {
-      sun: 45 * 7,
-      countersun: -315 * 7
+  if (screen.width > 1750) {
+    //mechanism circle
+    var pointDeg = {
+      p1: {
+        sun: 45 * 0,
+        countersun: 0
+      },
+      p2: {
+        sun: 45,
+        countersun: -315
+      },
+      p3: {
+        sun: 45 * 2,
+        countersun: -315 * 2
+      },
+      p4: {
+        sun: 45 * 3,
+        countersun: -315 * 3
+      },
+      p5: {
+        sun: 45 * 4,
+        countersun: -315 * 4
+      },
+      p6: {
+        sun: 45 * 5,
+        countersun: -315 * 5
+      },
+      p7: {
+        sun: 45 * 6,
+        countersun: -315 * 6
+      },
+      p8: {
+        sun: 45 * 7,
+        countersun: -315 * 7
+      }
     }
-  }
 
-  function turnMove(elem) {
-    var elClass = $(elem).attr('class').split(' ')[1];
-    $('.arrow').css('transform', 'rotate(' + pointDeg[elClass].sun + 'deg)');
-    $('.circle-white').css('transform', 'rotate(' + (pointDeg[elClass].sun + 135) + 'deg)');
-    $('.circle-orange').css('transform', 'rotate(' + (pointDeg[elClass].countersun + 135) + 'deg)');
-  }
-
-  $('.point').hover(function () {
-    turnMove($(this));
-    $('.point').removeClass('point-active');
-    $(this).addClass('point-active');
-  });
-
-  var start = $('.circle .point:first-child');
-
-  function frame() {
-    var el = $('.circle .point-active');
-    var nextEl = el.next('.point');
-
-    if ($('.circle').is(':hover')) {
-      return;
-    } else if (nextEl.length) {
-      turnMove(nextEl);
-      nextEl.addClass('point-active');
-      el.removeClass('point-active');
-    } else {
-      turnMove(start);
-      el.removeClass('point-active');
-      start.addClass('point-active');
+    function turnMove(elem) {
+      var elClass = $(elem).attr('class').split(' ')[1];
+      $('.arrow').css('transform', 'rotate(' + pointDeg[elClass].sun + 'deg)');
+      $('.circle-white').css('transform', 'rotate(' + (pointDeg[elClass].sun + 135) + 'deg)');
+      $('.circle-orange').css('transform', 'rotate(' + (pointDeg[elClass].countersun + 135) + 'deg)');
     }
-  }
 
-  setInterval(frame, 2000);
+    $('.point').hover(function () {
+      turnMove($(this));
+      $('.point').removeClass('point-active');
+      $(this).addClass('point-active');
+    });
+
+    var start = $('.circle .point:first-child');
+
+    function frame() {
+      var el = $('.circle .point-active');
+      var nextEl = el.next('.point');
+
+      if ($('.circle').is(':hover')) {
+        return;
+      } else if (nextEl.length) {
+        turnMove(nextEl);
+        nextEl.addClass('point-active');
+        el.removeClass('point-active');
+      } else {
+        turnMove(start);
+        el.removeClass('point-active');
+        start.addClass('point-active');
+      }
+    }
+    setInterval(frame, 2000);
+  }
 });
