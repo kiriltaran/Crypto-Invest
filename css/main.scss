@@ -112,6 +112,12 @@ a {
   padding: 42px 0;
 }
 
+.particles-bg {
+  @media screen and (max-width: 968px) {
+    display: none;
+  }
+}
+
 // PAGE
 .header {
   position: fixed;
@@ -165,6 +171,7 @@ a {
       display: flex;
       justify-content: space-around;
       flex-grow: 1;
+      transition: 1s linear;
       &-item {
         font-size: 18px;
         font-weight: 300;
@@ -178,7 +185,6 @@ a {
         }
       }
       @media screen and (max-width: 968px) {
-        display: none;
         flex-direction: column;
         position: absolute;
         top: 70px;
@@ -189,6 +195,7 @@ a {
         background: #529af6;
       }
     }
+    .show {}
     &-right {
       display: flex;
       justify-content: center;
@@ -976,6 +983,9 @@ a {
             }
             &.error {
               border: solid 2px #ff3434;
+            }
+            @media screen and (max-width: 500px) {
+              height: 40px;
             }
           }
           span.error {

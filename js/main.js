@@ -31,7 +31,7 @@ $(document).ready(function () {
 
   //menu burger
   $('.nav-icon').click(function () {
-    $('.nav-list').slideToggle();
+    $('.nav-list').slideToggle()
   });
 
   //progress circles
