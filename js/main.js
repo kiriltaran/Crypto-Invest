@@ -34,6 +34,10 @@ $(document).ready(function () {
     $('.nav-list').toggleClass('show');
   });
 
+  $('.nav-list-item a').click(function () {
+    $('.nav-list').toggleClass('show');
+  });
+
   //progress circles
   $('.order').circleProgress({
     value: 0,
