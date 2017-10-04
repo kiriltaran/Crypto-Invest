@@ -36,9 +36,11 @@ $(document).ready(function () {
     $('.nav-list').toggleClass('show');
   });
 
-  $('.nav-list-item a').click(function () {
-    $('.nav-list').toggleClass('show');
-  });
+  if (screen.width > 968) {
+    $('.nav-list-item a').click(function () {
+      $('.nav-list').toggleClass('show');
+    });
+  }
 
   //progress circles
   $('.order').circleProgress({
