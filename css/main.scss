@@ -185,7 +185,7 @@ a {
         }
       }
       @media screen and (max-width: 968px) {
-        display: none;
+        top: -900px !important;
         flex-direction: column;
         position: absolute;
         top: 70px;
@@ -196,7 +196,9 @@ a {
         background: #529af6;
       }
     }
-    .show {}
+    .show {
+      top: 70px !important;
+    }
     &-right {
       display: flex;
       justify-content: center;
