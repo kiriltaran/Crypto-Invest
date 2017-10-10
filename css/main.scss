@@ -12,14 +12,12 @@ body {
   background: #f8f8f8;
 }
 
-:active,
+ :active,
  :hover,
  :focus {
   outline: 0;
   outline-offset: 0;
-}
-
-// ELEMENT HELPERS
+} // ELEMENT HELPERS
 .orange {
   color: #eb873e;
 }
@@ -116,9 +114,7 @@ a {
   @media screen and (max-width: 968px) {
     display: none;
   }
-}
-
-// PAGE
+} // PAGE
 .header {
   position: fixed;
   width: 100%;
@@ -130,6 +126,7 @@ a {
   height: 70px;
   line-height: 70px;
   background: #529af6;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   &-logo {
     height: 100%;
     margin-right: 54px;
@@ -713,6 +710,7 @@ a {
 }
 
 .video {
+  position: relative;
   text-align: center;
 }
 
@@ -733,15 +731,21 @@ a {
       .circle-bg {
         position: absolute;
         bottom: 0;
-        right: 25px;
+        right: 115px;
         width: 660px;
         height: 657px;
         background: url('../img/achievements-circle-left.png');
         z-index: 0;
+        transition: 30s linear;
+        transform: scale(.4);
+      }
+      .swell {
+        transform: scale(2);
       }
       .photo {
         position: relative;
         z-index: 500;
+        margin-bottom: -45px;
         @media screen and (max-width: 500px) {
           img {
             width: 100%;
@@ -761,8 +765,10 @@ a {
         margin-top: 15px;
         margin-bottom: 20px;
         &-item {
+          position: relative;
           margin-right: 20px;
           transition: .2s linear;
+          z-index: 500;
         }
         .linked {
           display: inline-block;
@@ -804,7 +810,7 @@ a {
           width: 100%;
           z-index: 200;
           &-list {
-            font-size: 36px;
+            font-size: 26px;
             font-weight: 300;
             list-style: none;
             &-item {
@@ -843,12 +849,18 @@ a {
             padding: 25px 0 25px 15px;
           }
         }
+        @media screen and (max-width: 1700px) {
+          max-width: 670px;
+        }
       }
     }
     @media screen and (max-width: 1400px) {
       flex-direction: column;
       .leftbar {
         padding: 0;
+        .photo {
+          margin-bottom: 0;
+        }
       }
       .rightbar {
         text-align: center;
@@ -946,6 +958,7 @@ a {
     z-index: 0;
   }
   .form-panel {
+    text-align: left;
     margin: 0 auto;
     max-width: 890px;
     .form-header {

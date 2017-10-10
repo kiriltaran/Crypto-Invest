@@ -6,7 +6,6 @@ if (screen.width > 968) {
 }
 
 $(document).ready(function () {
-
   var leadCountryId = {};
 
   //get country phone codes
@@ -14,7 +13,8 @@ $(document).ready(function () {
     $.each(json, function (index, val) {
       leadCountryId[val.id] = val.name;
       leadCountryId[val.id].dataCode = val.dataCode;
-      $('#country').append('<option value=' + val.id + '>' + val.name.ru + '</option>');
+      $('#country-ru').append('<option value=' + val.id + '>' + val.name.ru + '</option>');
+      $('#country-en').append('<option value=' + val.id + '>' + val.name.en + '</option>');
     });
   });
 
@@ -27,8 +27,8 @@ $(document).ready(function () {
         ourLeadCountry = current_country;
       }
     });
-    $('#country').val(current_country);
-    $('#country').trigger('change');
+    $('#country-ru, #country-en').val(current_country);
+    $('#country-ru, #country-en').trigger('change');
   });
 
   //menu burger
@@ -39,6 +39,22 @@ $(document).ready(function () {
   if (screen.width <= 968) {
     $('.nav-list-item a').click(function () {
       $('.nav-list').toggleClass('show');
+    });
+  }
+
+  //circle-bg scaling
+  if (screen.width > 1400) {
+    $('.who').viewportChecker({
+      callbackFunction: function (elem, action) {
+        (function swell() {
+          if ($('.leftbar .circle-bg').hasClass('swell')) {
+            $('.leftbar .circle-bg').removeClass('swell');
+          } else {
+            $('.leftbar .circle-bg').addClass('swell');
+          }
+          setTimeout(swell, 30000);
+        })();
+      }
     });
   }
 

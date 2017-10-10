@@ -1,0 +1,25 @@
+{
+  "name": "Crypto-Invest",
+  "homepage": "https://github.com/kiriltaran/Crypto-Invest",
+  "authors": [
+    "kiriltaran <kiriltaran@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "carousel-3d": "^0.2.3",
+    "intl-tel-input": "^12.1.1",
+    "jquery-circle-progress": "^1.2.2",
+    "particles.js": "particles-js#^2.0.0",
+    "slick-carousel": "^1.8.1",
+    "jquery-validation": "^1.17.0"
+  }
+}
