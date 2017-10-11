@@ -20,6 +20,8 @@
     "jquery-circle-progress": "^1.2.2",
     "particles.js": "particles-js#^2.0.0",
     "slick-carousel": "^1.8.1",
-    "jquery-validation": "^1.17.0"
+    "jquery-validation": "^1.17.0",
+    "jquery-ui": "^1.12.1",
+    "bootstrap": "^3.3.7"
   }
 }

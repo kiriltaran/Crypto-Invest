@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CryptoInvesting</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/intl-tel-input/build/css/intlTelInput.css">
+  <link rel="stylesheet" href="css/signin.css">
+</head>
+
+<body>
+  <div class="wrapper-block">
+    <div class="header">
+      <div class="logo">
+        <img src="img/LogoCrypto.png" alt="Logo">
+      </div>
+    </div>
+    <div class="centerr-block">
+      <img id="backward" src="img/left.png">
+      <div class="first-step">
+        <div class="title">
+          <p>
+            <span class="thin-weight">Для продолжения работы с системой</span> Crypto
+            <span class="orange-color">Invest</span>, пожалуйста зарегистрируйтесь или войдите в личный кабинет</p>
+        </div>
+        <img src="img/Macbook-SpaceGrey.png" alt="mac">
+        <div>
+          <button id="registration">регистрация</button>
+        </div>
+        <button id="signIn">вход</button>
+      </div>
+      <div class="step-registretion">
+        <form id="secondForm">
+          <div class="form-group">
+            <lable for="firstName">Имя:</lable>
+            <input type="text" id="firstName" name="firstName" required="required" data-validation="length" data-validation-length="3-30"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="emailTwo">E-mail:</label>
+            <input id="emailTwo" required="required" name="email" type="email" data-validation="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="phone">Номер телефон:</label>
+            <input id="phone" type="text" name="leadPhone" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Страна:</label>
+            <select pattern="^([0-9]+)$" required="required" class="leadCountryId" name="leadCountryId" id="country">
+              <option value="">Твоя страна</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-default">регистрация</button>
+          </div>
+        </form>
+      </div>
+      <div class="step-signIn">
+        <form>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> запомнить меня
+            </label>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-default">Войти</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-block">
+      <div class="logos">
+        <img src="img/litecoin_logo.png" alt="logo">
+        <img src="img/Bitcoin_Logo_Horizontal.png" alt="logo">
+        <img src="img/Blockchain-Logo.png" alt="logo">
+        <img src="img/ethereum_nav-bar-logo.png" alt="logo">
+      </div>
+      <footer class="footer">
+        <p class="footer-text">Операции, которые предлагается совершать на данном сайте, могут расцениваться, как "Операции с высоким уровнем риска".
+          Их совершение небезопасно. При покупке на данном сайте услуг и финансовых инструментов, существует вероятность,
+          что вы понесете финансовые потери или даже полностью потеряете средства, имеющиеся на вашем счете.
+        </p>
+        <span class="footer-support">Поддержка: thelp.qp@gmail.com</span>
+        <span class="footer-copy">Копирайт &copy 2017 cryptinvest.com</span>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="bower_components/intl-tel-input/build/js/intlTelInput.min.js"></script>
+  <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="bower_components/jquery-validation/src/localization/messages_ru.js"></script>
+  <script src="js/signin.js"></script>
+</body>
+
+</html>

@@ -1,8 +1,8 @@
 // particles.js
 if (screen.width > 968) {
-  particlesJS.load('particles-js', 'libs/particles/particles.json', function () {});
-  particlesJS.load('particles-js-knowledge', 'libs/particles/particles.json', function () {});
-  particlesJS.load('particles-js-bot', 'libs/particles/particles.json', function () {});
+  particlesJS.load('particles-js', 'json/particles.json', function () {});
+  particlesJS.load('particles-js-knowledge', 'json/particles.json', function () {});
+  particlesJS.load('particles-js-bot', 'json/particles.json', function () {});
 }
 
 $(document).ready(function () {
