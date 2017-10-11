@@ -1,11 +1,45 @@
 $(document).ready(function () {
-  $("#videos img").click(function () {
-    var src = $(this).attr('alt');
-    $(".player").find("iframe").attr("src", src);
-  });
 
-  $(".arrow").click(function () {
-    $(".player").toggleClass("playerHide");
-  });
+    $("#phone").intlTelInput({
+        initialCountry: "auto",
+        autoPlaceholder: true,
+        separateDialCode: false,
+        autoHideDialCode: false,
+        formatOnDisplay: false,
+        nationalMode: false,
+        geoIpLookup: function (callback) {
+            $.get('https://ipinfo.io', function () {
+            }, "jsonp").always(function (resp) {
+                var countryCode = (resp && resp.country) ? resp.country : "";
+                callback(countryCode);
+            });
 
+        },
+        utilsScript: "../libs/intl-tel-input/build/js/utils.js" // just for formatting/placeholders etc
+    });
+
+    $("#signIn").click(function () {
+        $(".first-step").hide();
+        $(".step-signIn, #backward").show();
+    });
+
+    $("#registration").click(function () {
+        $(".first-step").hide();
+        $(".step-registretion, #backward").show();
+    });
+
+    $("#backward").click(function () {
+        $(this).hide();
+        $(".step-registretion, .step-signIn").hide();
+        $(".first-step").show();
+    });
+
+    //get country phone codes
+    $.getJSON('json/countries.json', function (json, textStatus) {
+        $.each(json, function (index, val) {
+            leadCountryId[val.id] = val.name;
+            leadCountryId[val.id].dataCode = val.dataCode;
+            $('#country').append('<option value=' + val.id + '>' + val.name.ru + '</option>');
+        });
+    });
 });
