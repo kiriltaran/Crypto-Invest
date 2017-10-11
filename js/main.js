@@ -101,6 +101,7 @@ $(document).ready(function () {
 
   // slider for comments
   $('.slider').slick({
+    infinite: true,
     dots: true,
     autoplay: true,
     autoplaySpeed: 15000
