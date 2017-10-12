@@ -1,7 +1,10 @@
 {
   "projectId": 13,
   "apiUrl": "https://dev.tramplin-uspeha.ru:9000/api/v1/subscription",
+  "redirectUrl": "http://crypto-investing.ru/registerer",
   "leadCurrency": "USD",
   "lastName": "User",
-  "leadPassword": "00000000"
+  "leadPassword": "00000000",
+  "language": "ru",
+  "tokenRequest": false
 }

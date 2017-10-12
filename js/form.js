@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   var constants = {};
   var urlParams = {};
   var leadCountryId = {};
@@ -14,8 +15,7 @@ $(document).ready(function () {
     $.each(json, function (index, val) {
       leadCountryId[val.id] = val.name;
       leadCountryId[val.id].dataCode = val.dataCode;
-      $('#country-ru').append('<option value=' + val.id + '>' + val.name.ru + '</option>');
-      $('#country-en').append('<option value=' + val.id + '>' + val.name.en + '</option>');
+      $('#country-' + lang).append('<option value=' + val.id + '>' + val.name[lang] + '</option>');
     });
   });
 
@@ -28,8 +28,7 @@ $(document).ready(function () {
         ourLeadCountry = current_country;
       }
     });
-    $('#country-ru, #country-en').val(current_country);
-    $('#country-ru, #country-en').trigger('change');
+    $('#country-' + lang).val(current_country).trigger('change');
   });
 
   // intl-tel-input
@@ -86,6 +85,7 @@ $(document).ready(function () {
     params.lastName = constants.lastName;
     params.leadPassword = constants.leadPassword;
     params.leadCurrency = constants.leadCurrency;
+    params.redirectUrl = constants.redirectUrl;
 
     $.each(fields, function (index, val) {
       params[val.name] = val.value;
@@ -113,21 +113,22 @@ $(document).ready(function () {
           var result = JSON.parse(http.responseText);
           if (result.operation_status === 'succeed') {
             // GET STRING FOR REDIRECT
-            // var getParamObj = {};
-            // if (result.data.token) {
-            //   getParamObj.token = result.data.token;
-            // }
-            // if (Number.isInteger(result.data)) {
-            //   getParamObj.id = result.data;
-            // }
-            // if (params.firstName) {
-            //   getParamObj.firstName = params.firstName;
-            // }
-            // if (params.email) {
-            //   getParamObj.email = params.email;
-            // }
-            // var getParamString = serialize(getParamObj);
-            //location.href = params.action + '?' + getParamString;
+            var getParamObj = {};
+            if (result.data.token && constants.tokenRequest) {
+              getParamObj.token = result.data.token;
+            }
+            if (Number.isInteger(result.data)) {
+              getParamObj.id = result.data;
+            }
+            if (params.firstName) {
+              getParamObj.firstName = params.firstName;
+            }
+            if (params.email) {
+              getParamObj.email = params.email;
+            }
+            var getParamString = serialize(getParamObj);
+
+            location.href = params.redirectUrl + '?' + getParamString;
 
             $('button').removeAttr('disabled');
           } else {

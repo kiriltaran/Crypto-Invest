@@ -15,8 +15,29 @@
     display: flex;
     align-items: center;
     padding-left: 84px;
+    justify-content: space-between;
     @media screen and(max-width: 500px) {
       padding-left: 30px;
+    }
+    .lang {
+      margin-right: 45px;
+      &-item {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        background-size: cover;
+        opacity: .5;
+      }
+      .en {
+        background: url('../img/en.png');
+      }
+      .ru {
+        background: url('../img/ru.png');
+      }
+      .active {
+        opacity: 1;
+      }
     }
   }
   .centerr-block {
