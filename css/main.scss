@@ -887,14 +887,18 @@ a {
     .slider {
       margin-bottom: 40px;
       &-item {
-        position: relative;
+        &-inner {
+          position: relative;
+          width: 595px;
+          margin: auto;
+        }
         &-link {
           text-transform: uppercase;
           font-weight: bold;
           position: absolute;
           display: inline-block;
           color: #365899;
-          left: 970px;
+          left: 280px;
           top: 260px;
           transition: .5s ease-in-out;
           &:after {
