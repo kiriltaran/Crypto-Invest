@@ -887,6 +887,33 @@ a {
     .slider {
       margin-bottom: 40px;
       &-item {
+        position: relative;
+        &-link {
+          text-transform: uppercase;
+          font-weight: bold;
+          position: absolute;
+          display: inline-block;
+          color: #365899;
+          left: 970px;
+          top: 260px;
+          transition: .5s ease-in-out;
+          &:after {
+            content: '';
+            display: inline-block;
+            background: url('../img/fb-icon-comments.png');
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            margin-left: 10px;
+          }
+          &:hover {
+            text-decoration: underline;
+            transform: scale(1.05);
+          }
+        }
+        .fix {
+          top: 185px;
+        }
         &-image {
           margin: 0 auto;
           @media screen and (max-width: 650px) {
