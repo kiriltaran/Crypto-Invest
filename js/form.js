@@ -1,11 +1,51 @@
 $(document).ready(function () {
   var constants = {};
   var urlParams = {};
+  var leadCountryId = {};
 
   //get json constants
   $.getJSON('json/constants.json', function (data) {
     constants = data;
     constants.landingPage = window.location.origin;
+  });
+
+  //get country phone codes
+  $.getJSON('json/countries.json', function (json, textStatus) {
+    $.each(json, function (index, val) {
+      leadCountryId[val.id] = val.name;
+      leadCountryId[val.id].dataCode = val.dataCode;
+      $('#country-ru').append('<option value=' + val.id + '>' + val.name.ru + '</option>');
+      $('#country-en').append('<option value=' + val.id + '>' + val.name.en + '</option>');
+    });
+  });
+
+  //select current country by IP
+  $.getJSON('https://freegeoip.net/json/', function (data) {
+    var current_country;
+    $.each(leadCountryId, function (index, val) {
+      if (val.en == data.country_name) {
+        current_country = index;
+        ourLeadCountry = current_country;
+      }
+    });
+    $('#country-ru, #country-en').val(current_country);
+    $('#country-ru, #country-en').trigger('change');
+  });
+
+  // intl-tel-input
+  $('#phone').intlTelInput({
+    initialCountry: 'auto',
+    autoPlaceholder: true,
+    separateDialCode: false,
+    autoHideDialCode: false,
+    formatOnDisplay: false,
+    nationalMode: false,
+    geoIpLookup: function (callback) { // phonecode by IP
+      $.get('https://ipinfo.io', function () {}, 'jsonp').always(function (resp) {
+        var countryCode = (resp && resp.country) ? resp.country : '';
+        callback(countryCode);
+      });
+    }
   });
 
   // make GET string from object
@@ -33,29 +73,6 @@ $(document).ready(function () {
   };
   updateUrlParams();
 
-  // validation
-  $('form').validate({
-    rules: {
-      firstName: {
-        required: true,
-        minlength: 3,
-        maxlength: 30
-      },
-      email: {
-        required: true
-      },
-      leadPhone: {
-        required: true,
-        minlength: 9,
-        maxlength: 20
-      }
-    },
-    errorElement: 'span',
-    submitHandler: function (form) {
-      sendRequest(getRequestParams());
-    }
-  });
-
   // get parameters for request
   function getRequestParams() {
     var fields = $('form').serializeArray();
@@ -76,8 +93,7 @@ $(document).ready(function () {
     return params;
   };
 
-
-
+  // send ajax request to a server
   function sendRequest(params) {
     $('button').attr('disabled');
     var http = new XMLHttpRequest();
@@ -122,4 +138,27 @@ $(document).ready(function () {
     }
     http.send(JSON.stringify(params));
   }
+
+  // validation
+  $('form').validate({
+    rules: {
+      firstName: {
+        required: true,
+        minlength: 3,
+        maxlength: 30
+      },
+      email: {
+        required: true
+      },
+      leadPhone: {
+        required: true,
+        minlength: 9,
+        maxlength: 20
+      }
+    },
+    errorElement: 'span',
+    submitHandler: function (form) {
+      sendRequest(getRequestParams());
+    }
+  });
 });

@@ -6,30 +6,6 @@ if (screen.width > 968) {
 }
 
 $(document).ready(function () {
-  var leadCountryId = {};
-
-  //get country phone codes
-  $.getJSON('json/countries.json', function (json, textStatus) {
-    $.each(json, function (index, val) {
-      leadCountryId[val.id] = val.name;
-      leadCountryId[val.id].dataCode = val.dataCode;
-      $('#country-ru').append('<option value=' + val.id + '>' + val.name.ru + '</option>');
-      $('#country-en').append('<option value=' + val.id + '>' + val.name.en + '</option>');
-    });
-  });
-
-  //select current country by IP
-  $.getJSON('https://freegeoip.net/json/', function (data) {
-    var current_country;
-    $.each(leadCountryId, function (index, val) {
-      if (val.en == data.country_name) {
-        current_country = index;
-        ourLeadCountry = current_country;
-      }
-    });
-    $('#country-ru, #country-en').val(current_country);
-    $('#country-ru, #country-en').trigger('change');
-  });
 
   //menu burger
   $('.nav-icon').click(function () {
@@ -83,22 +59,6 @@ $(document).ready(function () {
     });
   });
 
-  // intl-tel-input
-  $('#phone').intlTelInput({
-    initialCountry: 'auto',
-    autoPlaceholder: true,
-    separateDialCode: false,
-    autoHideDialCode: false,
-    formatOnDisplay: false,
-    nationalMode: false,
-    geoIpLookup: function (callback) { // phonecode by IP
-      $.get('https://ipinfo.io', function () {}, 'jsonp').always(function (resp) {
-        var countryCode = (resp && resp.country) ? resp.country : '';
-        callback(countryCode);
-      });
-    }
-  });
-
   // slider for comments
   $('.slider').slick({
     infinite: true,
@@ -106,9 +66,6 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 15000
   });
-
-  // slider for comments
-  $('.video-slider').slick({});
 
   //scroll animation for links and buttons
   $('.btn, .link').click(function () {

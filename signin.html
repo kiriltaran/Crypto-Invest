@@ -36,21 +36,19 @@
         <form id="secondForm">
           <div class="form-group">
             <lable for="firstName">Имя:</lable>
-            <input type="text" id="firstName" name="firstName" required="required" data-validation="length" data-validation-length="3-30"
-              class="form-control">
+            <input type="text" name="firstName" class="form-control">
           </div>
           <div class="form-group">
             <label for="emailTwo">E-mail:</label>
-            <input id="emailTwo" required="required" name="email" type="email" data-validation="email" class="form-control">
+            <input name="email" type="email" class="form-control">
           </div>
           <div class="form-group">
             <label for="phone">Номер телефон:</label>
-            <input id="phone" type="text" name="leadPhone" class="form-control">
+            <input type="tel" name="leadPhone" class="form-control" id="phone">
           </div>
           <div class="form-group">
             <label>Страна:</label>
-            <select pattern="^([0-9]+)$" required="required" class="leadCountryId" name="leadCountryId" id="country">
-              <option value=""></option>
+            <select class="leadCountryId" name="leadCountryId" id="country-ru">
             </select>
           </div>
           <div class="form-group">
@@ -62,11 +60,11 @@
         <form>
           <div class="form-group">
             <label for="email">E-mail:</label>
-            <input type="email" class="form-control" id="email">
+            <input type="email" class="form-control">
           </div>
           <div class="form-group">
             <label for="password">Пароль:</label>
-            <input type="password" class="form-control" id="password">
+            <input type="password" class="form-control">
           </div>
           <div class="checkbox">
             <label>
@@ -102,6 +100,7 @@
   <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="bower_components/jquery-validation/src/localization/messages_ru.js"></script>
   <script src="js/signin.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
