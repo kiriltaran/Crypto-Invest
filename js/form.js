@@ -141,7 +141,7 @@ $(document).ready(function () {
   }
 
   // validation
-  $('form').validate({
+  $('form.reg').validate({
     rules: {
       firstName: {
         required: true,
@@ -162,4 +162,19 @@ $(document).ready(function () {
       sendRequest(getRequestParams());
     }
   });
+
+  $('form.login').validate({
+    rules: {
+      email: {
+        required: true
+      },
+      leadPhone: {
+        required: true,
+        minlength: 9,
+        maxlength: 20
+      }
+    },
+    errorElement: 'span',
+  });
+
 });
