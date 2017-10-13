@@ -1,0 +1,42 @@
+$carousel-ratio: 2.5;
+$child-ratio: 1.2;
+$perspective: 3000px;
+$transition: 1s;
+@import '../bower_components/carousel-3d/styles/common/jquery.carousel-3d.scss';
+//next/prev
+[data-carousel-3d] {
+  [data-prev-button] {
+    &:before {
+      content: '';
+      background: url("../img/comments-left.png");
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 70px;
+      height: 70px;
+      margin: auto;
+      &:hover {
+        background: url("../img/comments-left-h.png");
+      }
+    }
+  }
+  [data-next-button] {
+    &:before {
+      content: '';
+      background: url("../img/comments-right.png");
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 70px;
+      height: 70px;
+      margin: auto;
+      &:hover {
+        background: url("../img/comments-right-h.png");
+      }
+    }
+  }
+}

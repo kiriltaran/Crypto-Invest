@@ -64,7 +64,7 @@ $(document).ready(function () {
     infinite: true,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 15000
+    autoplaySpeed: 10000
   });
 
   //scroll animation for links and buttons

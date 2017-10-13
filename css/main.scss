@@ -233,12 +233,19 @@ a {
         border: none;
         border-radius: 6px;
         opacity: .9;
+        @media screen and (max-width: 400px) {
+          font-size: 16px;
+          width: 195px;
+        }
         &:hover {
           box-shadow: 0px 15px 25px -10px rgba(0, 0, 0, 0.5);
         }
       }
       .lang {
         margin-left: 45px;
+        @media screen and (max-width: 400px) {
+          margin-left: 5px;
+        }
         &-item {
           display: inline-block;
           width: 32px;
@@ -729,9 +736,12 @@ a {
   }
 }
 
-.video {
+section.video {
   position: relative;
   text-align: center;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }
 
 .who {
