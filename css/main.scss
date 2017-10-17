@@ -922,6 +922,15 @@ section.video {
           position: relative;
           width: 595px;
           margin: auto;
+          @media screen and (max-width: 595px) {
+            width: 500px;
+          }
+          @media screen and (max-width: 510px) {
+            width: 400px;
+          }
+          @media screen and (max-width: 410px) {
+            width: 300px;
+          }
         }
         &-link {
           text-transform: uppercase;
@@ -932,14 +941,32 @@ section.video {
           left: 280px;
           top: 260px;
           transition: .5s ease-in-out;
+          @media screen and (max-width: 595px) {
+            left: 250px;
+            top: 220px;
+          }
+          @media screen and (max-width: 510px) {
+            left: 210px;
+            top: 175px;
+            font-size: 12px;
+          }
+          @media screen and (max-width: 410px) {
+            left: 130px;
+            top: 128px;
+          }
           &:after {
             content: '';
             display: inline-block;
             background: url('../img/fb-icon-comments.png');
+            background-size: contain;
             width: 40px;
             height: 40px;
             vertical-align: middle;
             margin-left: 10px;
+            @media screen and (max-width: 410px) {
+              width: 30px;
+              height: 30px;
+            }
           }
           &:hover {
             text-decoration: underline;
